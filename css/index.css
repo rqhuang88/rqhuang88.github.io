@@ -7,7 +7,7 @@ body {font-family: Arial;}
     flex-direction: row;
     align-items: center;
     width: auto;
-    padding: 6px 200px;
+    padding: 1% 20%;
 }
 
 /* Style the buttons inside the tab */
@@ -17,7 +17,7 @@ body {font-family: Arial;}
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
+    padding: 2% 2%;
     transition: 0.3s;
     font-size: 17px;
 }
@@ -35,7 +35,7 @@ body {font-family: Arial;}
 /* Style the tab content */
 .tabcontent {
     display: none;
-    padding: 6px 200px;
+    margin: 1% 20%;
     border-top: none;
     text-align: left;
 }
@@ -57,7 +57,7 @@ body {font-family: Arial;}
 
 .pubdiv{
     display: flex;
-    height: 200px;
+    height: 230px;
 }
 
 .pubimg{
@@ -67,7 +67,7 @@ body {font-family: Arial;}
 
 .pubtxt{
     display: inline-block;
-    padding: 0 50px 0 50px;
+    padding: 0 4% 0 4%;
     height: 50px;
     line-height: 20px;
 }
@@ -80,6 +80,30 @@ body {font-family: Arial;}
 
     display: -webkit-box;
     -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 15px;
+}
+
+.pubtitle{
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0 5px 0;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 18px;
+}
+
+.pubothers{
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0 5px 0;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     font-size: 15px;
 }
