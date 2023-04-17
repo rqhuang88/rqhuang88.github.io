@@ -1,6 +1,341 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ruqi Huang</title>
+</head>
 <body>
-<h1>Hello World</h1>
+<div class="tab">
+    <button class="tablinks" onclick="changeCategory(event, 'Home')">Home</button>
+    <button class="tablinks" onclick="changeCategory(event, 'Publications')">Publications</button>
+    <button class="tablinks" onclick="changeCategory(event, 'Group')">Group</button>
+</div>
+
+<div id="Home" class="tabcontent">
+    <div class="infodiv">
+        <div class="infoimg">
+            <img src="img/info.png">
+            <h2>Ruqi Huang</h2>
+            <p><strong>Contact:</strong></p>
+            <p>ruqihuang@sz.tsinghua.edu.cn</p>
+        </div>
+        <div class="infotxt">
+            <h3>Introduction</h3>
+            <p>I obtained my PhD degree under the supervision of Frederic Chazal from University of Paris-Saclay in 2016. Prior to that, I obtained my bachelor and master degree from Tsinghua University in 2011 and 2013, respectively. My research interests lie in 3D Computer Vision and Geometry Processing, with a strong focus on developing 3D reconstruction techniques for both static and dynamic scenes. In particular, I am interested in developing learning approaches towards 3D computer vision tasks without heavy dependency on supervision, via incorporating structural priors (especially the geometric ones) into neural networks. Beyond that, I am also interested in applying geometric/topological analysis on interdisciplinary data, e.g., biological, medical and high-dimensional imaging data. My full CV can be found here.</p>
+            <h3>Services</h3>
+            <ul>
+                <li>
+                    I have been a reviewer for top conferences and journals in Computer Vision and Graphics, including
+                    IEEE Transactions on Image Processing (J), IEEE Transactions on Multi-Media (J), Graphics
+                    Models (J), ACM SIGGRAPH (C), EuroGraphics (C), Pacific Graphics (C), CICAI (C), etc.
+                </li>
+                <li>
+                    I serve as the deputy secretary general of Expert Committee on Metaverse Techniques, Chinese
+                    Association for Artificial Intelligence (CAAI).
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="Publications" class="tabcontent">
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/NIE.png">
+        </div>
+        <div id="NIE" class="pubtxt">
+            <h3>Neural Intrinsic Embedding for Non-rigid Point Cloud Matching</h3>
+            <p class="pubabstract">Puhua Jiang, Mingze Sun, Ruqi Huang</p>
+            <p class="pubabstract"><strong>Abstract:</strong>  As a primitive 3D data representation, point clouds
+                are prevailing in 3D sensing, yet short of intrinsic structural
+                information of the underlying objects. Such discrepancy
+                poses great challenges on directly establishing correspondences
+                between point clouds sampled from deformable
+                shapes. In light of this, we propose Neural Intrinsic Embedding
+                (NIE) to embed each vertex into a high-dimensional
+                space in a way that respects the intrinsic structure. Based
+                upon NIE, we further present a weakly-supervised learning
+                framework for non-rigid point cloud registration. Unlike
+                the prior works, we do not require expansive and sensitive
+                off-line basis construction (e.g., eigen-decomposition
+                of Laplacians), nor do we require ground-truth correspondence
+                labels for supervision. We empirically show that our
+                framework performs on par with or even better than the
+                state-of-the-art baselines, which generally require more supervision
+                and/or more structural geometric input.</p>
+            <p class="pubabstract">Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2023</p>
+            <div class="pubclick">
+                <a href="html/NIE.html" class="pubbutton">[pdf 6.5M]</a>
+                <a href="https://github.com/TBSI2f/Neural-Intrinsic-Embedding" class="pubbutton">[code]</a>
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/ONODE.png">
+        </div>
+        <div id="ONODE" class="pubtxt">
+            <h3>Optical Neural Ordinary Differential Equations</h3>
+            <p class="pubabstract">Yun Zhao, Hang Chen, Min Lin, Haiou Zhang, Tao Yan, Xing Lin, Ruqi Huang, Qionghai Dai</p>
+            <p class="pubabstract"><strong>Abstract:</strong>  Increasing the layer number of on-chip photonic neural networks (PNNs) is essential to improve its model performance. However, the successively cascading of network hidden layers results in larger integrated photonic chip areas. To address this issue, we propose the optical neural ordinary differential equations (ON-ODE) architecture that parameterizes the continuous dynamics of hidden layers with optical ODE solvers. The ON-ODE comprises the PNNs followed by the photonic integrator and optical feedback loop, which can be configured to represent residual neural networks (ResNet) and recurrent neural networks with effectively reduced chip area occupancy. For the interference-based optoelectronic nonlinear hidden layer, the numerical experiments demonstrate that the single hidden layer ON-ODE can achieve approximately the same accuracy as the two-layer optical ResNet in image classification tasks. Besides, the ON-ODE improves the model classification accuracy for the diffraction-based all-optical linear hidden layer. The time-dependent dynamics property of ON-ODE is further applied for trajectory prediction with high accuracy.</p>
+            <p class="pubabstract">Proc. Optics Letters, 2023</p>
+            <div class="pubclick">
+                <a href="html/ONODE.html" class="pubbutton">[pdf 1M]</a>
+<!--                <a href="https://github.com/TBSI2f/Neural-Intrinsic-Embedding" class="pubbutton">[code]</a>-->
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/ElasticMVS.png">
+        </div>
+        <div id="ElasticMVS" class="pubtxt">
+            <h3>ElasticMVS: Learning elastic part representation for self-supervised multi-view stereopsis</h3>
+            <p class="pubabstract">Jinzhi Zhang, Ruofan Tang, Zheng Cao, Jing Xiao, Ruqi Huang, Lu Fang</p>
+            <p class="pubabstract"><strong>Abstract:</strong>  Learning
+                dense surface predictions from only a set of images without onerous groundtruth
+                3D training data for supervision. However, existing methods highly rely on
+                the local photometric consistency, which fail to identify accurately dense correspondence
+                in broad textureless or reflectant areas. In this paper, we show that geometric
+                proximity such as surface connectedness and occlusion boundaries implicitly inferred
+                from images could serve as reliable guidance for pixel-wise multi-view
+                correspondences. With this insight, we present a novel elastic part representation,
+                which encodes physically-connected part segmentations with elastically-varying
+                scales, shapes and boundaries. Meanwhile, a self-supervised MVS framework
+                namely ElasticMVS is proposed to learn the representation and estimate per-view
+                depth following a part-aware propagation and evaluation scheme. Specifically, the
+                pixel-wise part representation is trained by a contrastive learning-based strategy,
+                which increases the representation compactness in geometrically concentrated areas
+                and contrasts otherwise. ElasticMVS iteratively optimizes a part-level consistency
+                loss and a surface smoothness loss, based on a set of depth hypotheses propagated
+                from the geometrically concentrated parts. Extensive evaluations convey the
+                superiority of ElasticMVS in the reconstruction completeness and accuracy, as
+                well as the efficiency and scalability. Particularly, for the challenging large-scale
+                reconstruction benchmark, ElasticMVS demonstrates significant performance gain
+                over both the supervised and self-supervised approaches.</p>
+            <p class="pubabstract">Proc. Conference on Neural Information Processing Systems (NeurIPS) (Spolight), 2022</p>
+            <div class="pubclick">
+                <a href="html/ElasticMVS.html" class="pubbutton">[pdf 6.5M]</a>
+<!--                <a href="https://thu-luvision.github.io/" class="pubbutton">[code]</a>-->
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/ParseMVS.png">
+        </div>
+        <div id="ParseMVS" class="pubtxt">
+            <h3>ParseMVS: Learning Primitive-aware Surface Representations for Sparse Multi-view Stereopsis</h3>
+            <p class="pubabstract">Haiyang Ying, Jinzhi Zhang, Yuzhe Chen, Zheng Cao, Jing Xiao, Ruqi Huang, Lu Fang</p>
+            <p class="pubabstract"><strong>Abstract:</strong>  Multi-view stereopsis (MVS) recovers 3D surfaces by finding dense
+                photo-consistent correspondences from densely sampled images.
+                In this paper, we tackle the challenging MVS task from sparsely
+                sampled views (up to an order of magnitude fewer images), which
+                is more practical and cost-efficient in applications. The major challenge
+                comes from the significant correspondence ambiguity introduced
+                by the severe occlusions and the highly skewed patches. On
+                the other hand, such ambiguity can be resolved by incorporating
+                geometric cues from the global structure. In light of this, we propose
+                ParseMVS, boosting sparse MVS by learning the Primitive-AwaRe
+                Surface rEpresentation. In particular, on top of being aware of global
+                structure, our novel representation further allows for the preservation
+                of fine details including geometry, texture, and visibility.
+                More specifically, the whole scene is parsed into multiple geometric
+                primitives. On each of them, the geometry is defined as the displacement
+                along the primitives’ normal directions, together with the
+                texture and visibility along each view direction. An unsupervised
+                neural network is trained to learn these factors by progressively
+                increasing the photo-consistency and render-consistency among
+                all input images. Since the surface properties are changed locally
+                in the 2D space of each primitive, ParseMVS can preserve global
+                primitive structures while optimizing local details, handling the
+                ‘incompleteness’ and the ‘inaccuracy’ problems.We experimentally
+                demonstrate that ParseMVS constantly outperforms the state-ofthe-
+                art surface reconstruction method in both completeness and the
+                overall score under varying sampling sparsity, especially under the extreme sparse-MVS settings. Beyond that, ParseMVS also shows
+                great potential in compression, robustness, and efficiency.</p>
+            <p class="pubabstract">Proc. ACM International Conference on Multimedia, 2022</p>
+            <div class="pubclick">
+                <a href="html/ParseMVS.html" class="pubbutton">[pdf 22.5M]</a>
+                <!--                <a href="https://thu-luvision.github.io/" class="pubbutton">[code]</a>-->
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/CCDC.png">
+        </div>
+        <div id="CCDC" class="pubtxt">
+            <h3>Cross-Camera Deep Colorization</h3>
+            <p class="pubabstract">Yaping Zhao, Haitian Zheng, Mengqi Ji, Ruqi Huang</p>
+            <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we consider the color-plus-mono dual-camera system
+                and propose an end-to-end convolutional neural network to align and fuse images
+                from it in an efficient and cost-effective way. Our method takes cross-domain and
+                cross-scale images as input, and consequently synthesizes HR colorization results
+                to facilitate the trade-off between spatial-temporal resolution and color depth in
+                the single-camera imaging system. In contrast to the previous colorization methods,
+                ours can adapt to color and monochrome cameras with distinctive spatialtemporal
+                resolutions, rendering the flexibility and robustness in practical applications.
+                The key ingredient of our method is a cross-camera alignment module
+                that generates multi-scale correspondences for cross-domain image alignment.
+                Through extensive experiments on various datasets and multiple settings, we validate
+                the flexibility and effectiveness of our approach. Remarkably, our method
+                consistently achieves substantial improvements, i.e., around 10dB PSNR gain,
+                upon the state-of-the-art methods.</p>
+            <p class="pubabstract">Proc. CAAI International Conference on Artificial Intelligence(Oral presentation), 2022</p>
+            <div class="pubclick">
+                <a href="html/CCDC.html" class="pubbutton">[pdf 9.2M]</a>
+                <a href="https://github.com/IndigoPurple/CCDC" class="pubbutton">[code]</a>
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/EFENet.png">
+        </div>
+        <div id="EFENet" class="pubtxt">
+            <h3>EFENet: Reference-based Video Super-Resolution with Enhanced Flow Estimation</h3>
+            <p class="pubabstract">Yaping Zhao, Mengqi Ji, Ruqi Huang, Bin Wang, Shengjin Wang</p>
+            <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we consider the problem of reference-based video super-resolution(RefVSR), i.e., how to utilize a high-resolution (HR) reference frame to super-resolve a low-resolution (LR) video sequence. The existing approaches to RefVSR essentially attempt to align the reference and the input sequence, in the presence of resolution gap and long temporal range. However, they either ignore temporal structure within the input sequence, or suffer accumulative alignment errors. To address these issues, we propose EFENet to exploit simultaneously the visual cues contained in the HR reference and the temporal information contained in the LR sequence. EFENet first globally estimates cross-scale flow between the reference and each LR frame. Then our novel flow refinement module of EFENet refines the flow regarding the furthest frame using all the estimated flows, which leverages the global temporal information within the sequence and therefore effectively reduces the alignment errors. We provide comprehensive evaluations to validate the strengths of our approach, and to demonstrate that the proposed framework outperforms the state-of-the-art methods.</p>
+            <p class="pubabstract">Proc. CAAI International Conference on Artificial Intelligence, 2021</p>
+            <div class="pubclick">
+                <a href="html/EFENet.html" class="pubbutton">[pdf 3M]</a>
+<!--                <a href="https://github.com/IndigoPurple/EFENet" class="pubbutton">[code]</a>-->
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/ConsistentZoomOut.png">
+        </div>
+        <div id="ConsistentZoomOut" class="pubtxt">
+            <h3>Consistent ZoomOut: Efficient Spectral Map Synchronization</h3>
+            <p class="pubabstract">Ruqi Huang, Jing Ren, Peter Wonka, Maks Ovsjanikov</p>
+            <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we propose a novel method, which we call CONSISTENT ZOOMOUT, for efficiently refining correspondences among deformable 3D shape collections, while promoting the resulting map consistency. Our formulation is closely related to a recent unidirectional spectral refinement framework, but naturally integrates map consistency constraints into the refinement. Beyond that, we show further that our formulation can be adapted to recover the underlying isometry among near-isometric shape collections with a theoretical guarantee, which is absent in the other spectral map synchronization frameworks. We demonstrate that our method improves the accuracy compared to the competing methods when synchronizing correspondences in both near-isometric and heterogeneous shape collections, but also significantly outperforms the baselines in terms of map consistency.</p>
+            <p class="pubabstract">Proc. Symposium on Geometry Processing, 2020</p>
+            <div class="pubclick">
+                <a href="html/ConsistentZoomOut.html" class="pubbutton">[pdf 34.8M]</a>
+                <a href="https://github.com/ruqihuang/SGP2020_ConsistentZoomOut" class="pubbutton">[code]</a>
+                <a href="https://www.youtube.com/watch?v=WhduuY9o8QQ&t=24s" class="pubbutton">[video]</a>
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/OperatorNet.png">
+        </div>
+        <div id="OperatorNet" class="pubtxt">
+            <h3>OperatorNet: Recovering 3D Shapes From Difference Operators</h3>
+            <p class="pubabstract">Ruqi Huang, Marie-Julie Rakotosaona, Panos Achlioptas, Leonidas Guibas, Maks Ovsjanikov</p>
+            <p class="pubabstract"><strong>Abstract:</strong>  This paper proposes a learning-based framework for reconstructing 3D shapes from functional operators, compactly encoded as small-sized matrices. To this end we introduce a novel neural architecture, called OperatorNet, which takes as input a set of linear operators representing a shape and produces its 3D embedding. We demonstrate that this approach significantly outperforms previous purely geometric methods for the same problem. Furthermore, we introduce a novel functional operator, which encodes the extrinsic or pose-dependent shape information, and thus complements purely intrinsic pose-oblivious operators, such as the classical Laplacian. Coupled with this novel operator, our reconstruction network achieves very high reconstruction accuracy, even in the presence of incomplete information about a shape, given a soft or functional map expressed in a reduced basis. Finally, we demonstrate that the multiplicative functional algebra enjoyed by these operators can be used to synthesize entirely new unseen shapes, in the context of shape interpolation and shape analogy applications.</p>
+            <p class="pubabstract">Proc. International Conference on Computer Vision(ICCV), 2019</p>
+            <div class="pubclick">
+                <a href="html/OperatorNet.html" class="pubbutton">[pdf 13.1M]</a>
+                <a href="https://github.com/mrakotosaon/operatornet" class="pubbutton">[code]</a>
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/LimitShape.png">
+        </div>
+        <div id="LimitShape" class="pubtxt">
+            <h3>Limit Shape – A Tool for Understanding Shape Differences and Variablity in 3D Model Collections</h3>
+            <p class="pubabstract">Ruqi Huang, Panos Achlioptas, Leonidas Guibas, Maks Ovsjanikov</p>
+            <p class="pubabstract"><strong>Abstract:</strong>  We propose a novel construction for extracting a central or limit shape in a shape collection, connected via a functional map network. Our approach is based on enriching the latent space induced by a functional map network with an additional natural metric structure. We call this shape-like dual object the limit shape and show that its construction avoids many of the biases introduced by selecting a fixed base shape or template. We also show that shape differences between real shapes and the limit shape can be computed and characterize the unique properties of each shape in a collection – leading to a compact and rich shape representation. We demonstrate the utility of this representation in a range of shape analysis tasks, including improving functional maps in difficult situations through the mediation of limit shapes, understanding and visualizing the variability within and across different shape classes, and several others. In this way, our analysis sheds light on the missing geometric structure in previously used latent functional spaces, demonstrates how these can be addressed and finally enables a compact and meaningful shape representation useful in a variety of practical applications.</p>
+            <p class="pubabstract">Proc. Symposium on Geometry Processing, 2019</p>
+            <div class="pubclick">
+                <a href="html/LimitShape.html" class="pubbutton">[pdf 30.9M]</a>
+                <a href="https://github.com/ruqihuang/LimitShape" class="pubbutton">[code]</a>
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/AMRSAM.png">
+        </div>
+        <div id="AMRSAM" class="pubtxt">
+            <h3>Adjoint Map Representation for Shape Analysis and Matching</h3>
+            <p class="pubabstract">Ruqi Huang, Maks Ovsjanikov</p>
+            <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we propose to consider the adjoint operators of functional maps, and demonstrate their utility in several tasks in geometry processing. Unlike a functional map, which represents a correspondence simply using the pull-back of function values, the adjoint operator reflects both the map and its distortion with respect to given inner products. We argue that this property of adjoint operators and especially their relation to the map inverse under the choice of different inner products, can be useful in applications including bi-directional shape matching, shape exploration, and pointwise map recovery among others. In particular, in this paper, we show that the adjoint operators can be used within the cycle-consistency framework to encode and reveal the presence or lack of consistency between distortions in a collection, in a way that is complementary to the previously used purely map-based consistency measures. We also show how the adjoint can be used for matching pairs of shapes, by accounting for maps in both directions, can help in recovering point-to-point maps from their functional counterparts, and describe how it can shed light on the role of functional basis selection.</p>
+            <p class="pubabstract">Proc. Symposium on Geometry Processing, 2017</p>
+            <div class="pubclick">
+                <a href="html/AMRSAM.html" class="pubbutton">[pdf 18.6M]</a>
+                <a href="https://github.com/ruqihuang/AdjointFmaps" class="pubbutton">[code]</a>
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/OSFMSDO.png">
+        </div>
+        <div id="OSFMSDO" class="pubtxt">
+            <h3>On the Stability of Functional Maps and Shape Difference Operators</h3>
+            <p class="pubabstract">Ruqi Huang, Frederic Chazal, Maks Ovsjanikov</p>
+            <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we provide stability guarantees for two frameworks that are based on the notion of functional maps – the shape difference operators and the framework which is used to analyze and visualize the deformations between shapes induced by a functional map. We consider two types of perturbations in our analysis: one is on the input shapes and the other is on the change in scale. In theory, we formulate and justify the robustness that has been observed in practical implementations of those frameworks. Inspired by our theoretical results, we propose a pipeline for constructing shape difference operators on point clouds and show numerically that the results are robust and informative. In particular, we show that both the shape difference operators and the derived areas of highest distortion are stable with respect to changes in shape representation and change of scale. Remarkably, this is in contrast with the well-known instability of the eigenfunctions of the Laplace-Beltrami operator computed on point clouds compared to those obtained on triangle meshes.</p>
+            <p class="pubabstract">Proc. Computer Graphics Forum, 2017</p>
+            <div class="pubclick">
+                <a href="html/OSFMSDO.html" class="pubbutton">[pdf 18.5M]</a>
+<!--                <a href="https://github.com/ruqihuang/AdjointFmaps" class="pubbutton">[code]</a>-->
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/GHAFSURTG.png">
+        </div>
+        <div id="GHAFSURTG" class="pubtxt">
+            <h3>Gromov-Hausdorff Approximation of Filamentary Structures Using Reeb-Type Graphs</h3>
+            <p class="pubabstract">Frederic Chazal, Ruqi Huang, Jian Sun</p>
+            <p class="pubabstract"><strong>Abstract:</strong>  In many real-world applications data appear to be sampled around 1-dimensional filamentary structures that can be seen as topological metric graphs. In this paper we address the metric reconstruction problem of such filamentary structures from data sampled around them. We prove that they can be approximated, with respect to the Gromov-Hausdorff distance by well-chosen Reeb graphs (and some of their variants) and provide an efficient and easy to implement algorithm to compute such approximations in almost linear time. We illustrate the performances of our algorithm on a few data sets.</p>
+            <p class="pubabstract">Proc. Discrete Computational Geometry, 2015</p>
+            <div class="pubclick">
+                <a href="html/GHAFSURTG.html" class="pubbutton">[pdf 3M]</a>
+                <!--                <a href="https://github.com/ruqihuang/AdjointFmaps" class="pubbutton">[code]</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Group" class="tabcontent">
+    <div class="groupdiv">
+        <div class="grouptxt">
+            <h3>PhD Students</h3>
+            <ul>
+                <li>Puhua Jiang, 2021-now</li>
+                <li>Jinzhi Zhang, 2021-now</li>
+                <li>Yun Zhao, 2021-now</li>
+                <li>Yanchen Guo, 2021-now</li>
+                <li>Yujia Chen, 2022-now</li>
+                <li>Fengdi Zhang, 2022-now</li>
+            </ul>
+            <h3>MPhil Students</h3>
+            <ul>
+                <li>Chen Guo, 2021-now</li>
+                <li>Ting Zhang, 2021-now</li>
+                <li>Mingze Sun, 2022-now</li>
+                <li>Yurun Chen, 2022-now</li>
+                <li>Jin Wang, 2022-now</li>
+                <li>Shiwei Mao, 2022-now</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
 </body>
+
+<style>
+    @import "css/index.css";
+</style>
+
+<script src="js/tabbar.js"></script>
+<script>
+    window.onload = function () {
+        iniStat()
+    }
+    function iniStat() {
+        changeCategory(event, 'Home');
+    }
+</script>
+
 </html>

@@ -1,0 +1,104 @@
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    padding: 6px 200px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 200px;
+    border-top: none;
+    text-align: left;
+}
+
+.infodiv{
+    display: flex;
+}
+
+.infoimg{
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+.infotxt{
+    display: inline-block;
+    padding: 0px 50px;
+    line-height: 25px;
+}
+
+.pubdiv{
+    display: flex;
+    height: 200px;
+}
+
+.pubimg{
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+.pubtxt{
+    display: inline-block;
+    padding: 0 50px 0 50px;
+    height: 50px;
+    line-height: 20px;
+}
+
+.pubabstract{
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0 5px 0;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 15px;
+}
+
+.pubclick{
+    display: flex;
+}
+
+.pubbutton{
+    display: inline-block;
+}
+
+.groupdiv{
+    display: flex;
+}
+
+.grouptxt{
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    line-height: 25px;
+}
+
