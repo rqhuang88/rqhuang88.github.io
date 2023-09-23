@@ -126,3 +126,12 @@ body {font-family: Arial;}
     line-height: 25px;
 }
 
+.newsdiv{
+    display: flex;
+}
+
+.newstxt{
+    display: inline-block;
+    line-height: 25px;
+}
+
