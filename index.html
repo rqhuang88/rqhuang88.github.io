@@ -35,7 +35,7 @@
         <div class="newstxt">
             <ul>
                 <li><strong>2023-10:</strong> One paper was accepted by TPAMI 2023.</li>
-                <li><strong>2023-09:</strong> One paper was conditionally accepted by NeurIPS 2023.</li>
+                <li><strong>2023-09:</strong> One paper was accepted by NeurIPS 2023.</li>
                 <li><strong>2023-07:</strong> Two papers were accepted by ICCV 2023.</li>
                 <li><strong>2023-03:</strong> One paper was accepted by CVPR 2023.</li>
             </ul>
@@ -45,6 +45,41 @@
 
 <div id="Publications" class="tabcontent">
     <h2>Publications</h2>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/DFR.png">
+        </div>
+        <div id="DFR" class="pubtxt">
+            <h3 class="pubtitle">Non-Rigid Shape Registration via Deep Functional Maps Prior</h3>
+            <p class="pubothers">Puhua Jiang, Mingze Sun, Ruqi Huang</p>
+            <p class="pubabstract"><strong>Abstract:</strong> In this paper, we propose a learning-based framework for non-rigid shape registration
+                without correspondence supervision. Traditional shape registration techniques
+                typically rely on correspondences induced by extrinsic proximity, therefore can
+                fail in the presence of large intrinsic deformations. Spectral mapping methods
+                overcome this challenge by embedding shapes into, geometric or learned, highdimensional
+                spaces, where shapes are easier to align. However, due to the dependency
+                on abstract, non-linear embedding schemes, the latter can be vulnerable with
+                respect to perturbed or alien input. In light of this, our framework takes the best
+                of both worlds. Namely, we deform source mesh towards the target point cloud,
+                guided by correspondences induced by high-dimensional embeddings learned from
+                deep functional maps (DFM). In particular, the correspondences are dynamically
+                updated according to the intermediate registrations and filtered by consistency prior,
+                which prominently robustify the overall pipeline. Moreover, in order to alleviate the
+                requirement of extrinsically aligned input, we train an orientation regressor on a set
+                of aligned synthetic shapes independent of the training shapes for DFM. Empirical
+                results show that, with as few as dozens of training shapes of limited variability, our
+                pipeline achieves state-of-the-art results on several benchmarks of non-rigid point
+                cloud matching, but also delivers high-quality correspondences between unseen
+                challenging shape pairs that undergo both significant extrinsic and intrinsic deformations,
+                in which case neither traditional registration methods nor intrinsic methods
+                work.</p>
+            <p class="pubothers">Proc. 37th Conference on Neural Information Processing Systems (NeurIPS 2023)</p>
+            <div class="pubclick">
+                <a href="html/DFR.html" class="pubbutton">[pdf 9.9M]</a>
+                <a href="https://github.com/rqhuang88/DFR" class="pubbutton">[code]</a>
+            </div>
+        </div>
+    </div>
     <div class="pubdiv">
         <div class="pubimg">
             <img width="200px" src="img/GiganticNVS.png">
