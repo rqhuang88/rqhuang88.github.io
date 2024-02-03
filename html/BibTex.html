@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BibTex</title>
+</head>
+<body>
+
+<div id="BibTex" class="bib_css">
+    <p id="contentParagraph"></p>
+    <button onclick="copyToClipboard('BibTex')">Copy</button>
+</div>
+
+<div id="messagePopup" class="message-popup"></div>
+
+</body>
+
+<style>
+    .bib_css {
+        white-space: pre-line;
+        padding: 20px;
+        line-height: 20px;
+    }
+
+    .message-popup {
+        display: none;
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        z-index: 12;
+    }
+
+    button {
+        transform: scale(1.2); /* 根据需要设置缩放比例 */
+    }
+</style>
+
+<script src="../js/BibTex.js"></script>
+
+</html>
