@@ -56,8 +56,9 @@ if (id === 'DFR') {
     contentParagraph.textContent = '@article{jiang2023non,\n' +
         '   title={Non-Rigid Shape Registration via Deep Functional Maps Prior},\n' +
         '   author={Jiang, Puhua and Sun, Mingze and Huang, Ruqi},\n' +
-        '   journal={arXiv preprint arXiv:2311.04494},\n' +
-        '   year={2023}\n' +
+        '   journal={Advances in Neural Information Processing Systems},\n' +
+        '   volume={36},\n' +
+        '   year={2024}\n' +
         '}';
 } else if (id === 'ULPCMM') {
     contentParagraph.textContent = '@article{wan2023unsupervised,\n' +
@@ -219,6 +220,22 @@ if (id === 'DFR') {
         '  number={53},\n' +
         '  pages={621--649},\n' +
         '  year={2015}\n' +
+        '}';
+} else if (id === 'OmniSeg3D') {
+    contentParagraph.textContent = '@inproceedings{ying2024omniseg3d,\n' +
+        '   title={Omniseg3d: Omniversal 3d segmentation via hierarchical contrastive learning},\n' +
+        '   author={Ying, Haiyang and Yin, Yixuan and Zhang, Jinzhi and Wang, Fan and Yu, Tao and Huang, Ruqi and Fang, Lu},\n' +
+        '   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},\n' +
+        '   pages={20612--20622},\n' +
+        '   year={2024}\n' +
+        '}';
+} else if (id === 'XScale-NVS') {
+    contentParagraph.textContent = '@inproceedings{wang2024xscale,\n' +
+        '   title={XScale-NVS: Cross-Scale Novel View Synthesis with Hash Featurized Manifold},\n' +
+        '   author={Wang, Guangyu and Zhang, Jinzhi and Wang, Fan and Huang, Ruqi and Fang, Lu},\n' +
+        '   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},\n' +
+        '   pages={21029--21039},\n' +
+        '   year={2024}\n' +
         '}';
 } else {
     contentParagraph.textContent = 'None';
