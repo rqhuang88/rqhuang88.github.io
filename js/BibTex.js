@@ -230,12 +230,25 @@ if (id === 'DFR') {
         '   year={2024}\n' +
         '}';
 } else if (id === 'XScale-NVS') {
-    contentParagraph.textContent = '@inproceedings{wang2024xscale,\n' +
+    contentParagraph.textContent = '@inproceedings{wang2024xscalec,\n' +
         '   title={XScale-NVS: Cross-Scale Novel View Synthesis with Hash Featurized Manifold},\n' +
         '   author={Wang, Guangyu and Zhang, Jinzhi and Wang, Fan and Huang, Ruqi and Fang, Lu},\n' +
         '   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},\n' +
         '   pages={21029--21039},\n' +
         '   year={2024}\n' +
+        '}';
+} else if (id === 'Nanowatt') {
+    contentParagraph.textContent = '@article{doi:10.1126/sciadv.adn2031,\n' +
+        '   author = {Tao Yan  and Tiankuang Zhou  and Yanchen Guo  and Yun Zhao  and Guocheng Shao  and Jiamin Wu  and Ruqi Huang  and Qionghai Dai  and Lu Fang },\n' +
+        '   title = {Nanowatt all-optical 3D perception for mobile robotics},\n' +
+        '   journal = {Science Advances},\n' +
+        '   volume = {10},\n' +
+        '   number = {27},\n' +
+        '   pages = {eadn2031},\n' +
+        '   year = {2024},\n' +
+        '   doi = {10.1126/sciadv.adn2031},\n' +
+        '   URL = {https://www.science.org/doi/abs/10.1126/sciadv.adn2031},\n' +
+        '   eprint = {https://www.science.org/doi/pdf/10.1126/sciadv.adn2031},\n' +
         '}';
 } else {
     contentParagraph.textContent = 'None';
