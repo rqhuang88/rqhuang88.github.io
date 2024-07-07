@@ -48,6 +48,21 @@
     <h2>Selected Publications</h2>
     <div class="pubdiv">
         <div class="pubimg">
+            <img width="200px" src="img/Nanowatt.png">
+        </div>
+        <div id="Nanowatt" class="pubtxt">
+            <h3 class="pubtitle">Nanowatt all-optical 3D perception for mobile robotics</h3>
+            <p class="pubothers">Tao Yan, Tiankuang Zhou, Yanchen Guo, Yun Zhao, Guocheng Shao, Jiamin Wu, Ruqi Huang, Qionghai Dai, Lu Fang</p>
+            <p class="pubabstract"><strong>Abstract:</strong> Three-dimensional (3D) perception is vital to drive mobile robotics’ progress toward intelligence. However, state-of-the-art 3D perception solutions require complicated postprocessing or point-by-point scanning, suffering computational burden, latency of tens of milliseconds, and additional power consumption. Here, we propose a parallel all-optical computational chipset 3D perception architecture (Aop3D) with nanowatt power and light speed. The 3D perception is executed during the light propagation over the passive chipset, and the captured light intensity distribution provides a direct reflection of the depth map, eliminating the need for extensive postprocessing. The prototype system of Aop3D is tested in various scenarios and deployed to a mobile robot, demonstrating unprecedented performance in distance detection and obstacle avoidance. Moreover, Aop3D works at a frame rate of 600 hertz and a power consumption of 33.3 nanowatts per meta-pixel experimentally. Our work is promising toward next-generation direct 3D perception techniques with light speed and high energy efficiency.</p>
+            <p class="pubothers">Proc. Science Advances, 2024</p>
+            <div class="pubclick">
+                <a href="https://www.science.org/doi/abs/10.1126/sciadv.adn2031" class="pubbutton">[pdf]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('Nanowatt')">[BibTex]</a>
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
             <img width="200px" src="img/XScale-NVS.png">
         </div>
         <div id="XScale-NVS" class="pubtxt">
@@ -454,50 +469,50 @@
             </div>
         </div>
     </div>
-    <div class="pubdiv">
-        <div class="pubimg">
-            <img width="200px" src="img/CCDC.png">
-        </div>
-        <div id="CCDC" class="pubtxt">
-            <h3 class="pubtitle">Cross-Camera Deep Colorization</h3>
-            <p class="pubothers">Yaping Zhao, Haitian Zheng, Mengqi Ji, Ruqi Huang</p>
-            <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we consider the color-plus-mono dual-camera system
-                and propose an end-to-end convolutional neural network to align and fuse images
-                from it in an efficient and cost-effective way. Our method takes cross-domain and
-                cross-scale images as input, and consequently synthesizes HR colorization results
-                to facilitate the trade-off between spatial-temporal resolution and color depth in
-                the single-camera imaging system. In contrast to the previous colorization methods,
-                ours can adapt to color and monochrome cameras with distinctive spatialtemporal
-                resolutions, rendering the flexibility and robustness in practical applications.
-                The key ingredient of our method is a cross-camera alignment module
-                that generates multi-scale correspondences for cross-domain image alignment.
-                Through extensive experiments on various datasets and multiple settings, we validate
-                the flexibility and effectiveness of our approach. Remarkably, our method
-                consistently achieves substantial improvements, i.e., around 10dB PSNR gain,
-                upon the state-of-the-art methods.</p>
-            <p class="pubothers">Proc. CAAI International Conference on Artificial Intelligence(Oral presentation), 2022</p>
-            <div class="pubclick">
-                <a href="html/CCDC.html" class="pubbutton">[pdf 9.2M]</a>
-                <a href="https://github.com/IndigoPurple/CCDC" class="pubbutton">[code]</a>
-                <a href="javascript:void(0)" onclick="redirectToPageB('CCDC')">[BibTex]</a>
-            </div>
-        </div>
-    </div>
-    <div class="pubdiv">
-        <div class="pubimg">
-            <img width="200px" src="img/EFENet.png">
-        </div>
-        <div id="EFENet" class="pubtxt">
-            <h3 class="pubtitle">EFENet: Reference-based Video Super-Resolution with Enhanced Flow Estimation</h3>
-            <p class="pubothers">Yaping Zhao, Mengqi Ji, Ruqi Huang, Bin Wang, Shengjin Wang</p>
-            <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we consider the problem of reference-based video super-resolution(RefVSR), i.e., how to utilize a high-resolution (HR) reference frame to super-resolve a low-resolution (LR) video sequence. The existing approaches to RefVSR essentially attempt to align the reference and the input sequence, in the presence of resolution gap and long temporal range. However, they either ignore temporal structure within the input sequence, or suffer accumulative alignment errors. To address these issues, we propose EFENet to exploit simultaneously the visual cues contained in the HR reference and the temporal information contained in the LR sequence. EFENet first globally estimates cross-scale flow between the reference and each LR frame. Then our novel flow refinement module of EFENet refines the flow regarding the furthest frame using all the estimated flows, which leverages the global temporal information within the sequence and therefore effectively reduces the alignment errors. We provide comprehensive evaluations to validate the strengths of our approach, and to demonstrate that the proposed framework outperforms the state-of-the-art methods.</p>
-            <p class="pubothers">Proc. CAAI International Conference on Artificial Intelligence, 2021</p>
-            <div class="pubclick">
-                <a href="html/EFENet.html" class="pubbutton">[pdf 3.0M]</a>
-                <a href="javascript:void(0)" onclick="redirectToPageB('EFENet')">[BibTex]</a>
-            </div>
-        </div>
-    </div>
+<!--    <div class="pubdiv">-->
+<!--        <div class="pubimg">-->
+<!--            <img width="200px" src="img/CCDC.png">-->
+<!--        </div>-->
+<!--        <div id="CCDC" class="pubtxt">-->
+<!--            <h3 class="pubtitle">Cross-Camera Deep Colorization</h3>-->
+<!--            <p class="pubothers">Yaping Zhao, Haitian Zheng, Mengqi Ji, Ruqi Huang</p>-->
+<!--            <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we consider the color-plus-mono dual-camera system-->
+<!--                and propose an end-to-end convolutional neural network to align and fuse images-->
+<!--                from it in an efficient and cost-effective way. Our method takes cross-domain and-->
+<!--                cross-scale images as input, and consequently synthesizes HR colorization results-->
+<!--                to facilitate the trade-off between spatial-temporal resolution and color depth in-->
+<!--                the single-camera imaging system. In contrast to the previous colorization methods,-->
+<!--                ours can adapt to color and monochrome cameras with distinctive spatialtemporal-->
+<!--                resolutions, rendering the flexibility and robustness in practical applications.-->
+<!--                The key ingredient of our method is a cross-camera alignment module-->
+<!--                that generates multi-scale correspondences for cross-domain image alignment.-->
+<!--                Through extensive experiments on various datasets and multiple settings, we validate-->
+<!--                the flexibility and effectiveness of our approach. Remarkably, our method-->
+<!--                consistently achieves substantial improvements, i.e., around 10dB PSNR gain,-->
+<!--                upon the state-of-the-art methods.</p>-->
+<!--            <p class="pubothers">Proc. CAAI International Conference on Artificial Intelligence(Oral presentation), 2022</p>-->
+<!--            <div class="pubclick">-->
+<!--                <a href="html/CCDC.html" class="pubbutton">[pdf 9.2M]</a>-->
+<!--                <a href="https://github.com/IndigoPurple/CCDC" class="pubbutton">[code]</a>-->
+<!--                <a href="javascript:void(0)" onclick="redirectToPageB('CCDC')">[BibTex]</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="pubdiv">-->
+<!--        <div class="pubimg">-->
+<!--            <img width="200px" src="img/EFENet.png">-->
+<!--        </div>-->
+<!--        <div id="EFENet" class="pubtxt">-->
+<!--            <h3 class="pubtitle">EFENet: Reference-based Video Super-Resolution with Enhanced Flow Estimation</h3>-->
+<!--            <p class="pubothers">Yaping Zhao, Mengqi Ji, Ruqi Huang, Bin Wang, Shengjin Wang</p>-->
+<!--            <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we consider the problem of reference-based video super-resolution(RefVSR), i.e., how to utilize a high-resolution (HR) reference frame to super-resolve a low-resolution (LR) video sequence. The existing approaches to RefVSR essentially attempt to align the reference and the input sequence, in the presence of resolution gap and long temporal range. However, they either ignore temporal structure within the input sequence, or suffer accumulative alignment errors. To address these issues, we propose EFENet to exploit simultaneously the visual cues contained in the HR reference and the temporal information contained in the LR sequence. EFENet first globally estimates cross-scale flow between the reference and each LR frame. Then our novel flow refinement module of EFENet refines the flow regarding the furthest frame using all the estimated flows, which leverages the global temporal information within the sequence and therefore effectively reduces the alignment errors. We provide comprehensive evaluations to validate the strengths of our approach, and to demonstrate that the proposed framework outperforms the state-of-the-art methods.</p>-->
+<!--            <p class="pubothers">Proc. CAAI International Conference on Artificial Intelligence, 2021</p>-->
+<!--            <div class="pubclick">-->
+<!--                <a href="html/EFENet.html" class="pubbutton">[pdf 3.0M]</a>-->
+<!--                <a href="javascript:void(0)" onclick="redirectToPageB('EFENet')">[BibTex]</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="pubdiv">
         <div class="pubimg">
             <img width="200px" src="img/ConsistentZoomOut.png">
