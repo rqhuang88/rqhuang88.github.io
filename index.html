@@ -35,7 +35,7 @@
     <div class="newsdiv">
         <div class="newstxt">
             <ul>
-                <li><strong>2024-07:</strong> One paper was conditionally accepted by SIGGRAPH Asia 2024 and PG 2024, respectively.</li>
+                <li><strong>2024-07:</strong> One paper was accepted by SIGGRAPH Asia 2024 and PG 2024, respectively.</li>
                 <li><strong>2024-06:</strong> One paper was accepted by Science Advances.</li>
                 <li><strong>2024-03:</strong> Two papers were accepted by CVPR 2024.</li>
                 <li><strong>2023-10:</strong> One paper was accepted by TPAMI 2023.</li>
@@ -46,6 +46,54 @@
 
 <div id="Publications" class="tabcontent">
     <h2>Selected Publications</h2>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/SRIF.png">
+        </div>
+        <div id="SRIF" class="pubtxt">
+            <h3 class="pubtitle">SRIF: Semantic Shape Registration Empowered by Diffusion-based Image Morphing and Flow Estimation</h3>
+            <p class="pubothers">Mingze Sun, Chen Guo, Puhua Jiang, Shiwei Mao, Yurun Chen, Ruqi Huang</p>
+            <p class="pubabstract"><strong>Abstract:</strong> In this paper, we propose SRIF, a novel Semantic shape Registration framework based on diffusion-based Image morphing and Flow estimation. More
+                concretely, given a pair of extrinsically aligned shapes, we first render them
+                from multi-views, and then utilize an image interpolation framework based
+                on diffusion models to generate sequences of intermediate images between
+                them. The images are later fed into a dynamic 3D Gaussian splatting framework, with which we reconstruct and post-process for intermediate point
+                clouds respecting the image morphing processing. In the end, tailored for
+                the above, we propose a novel registration module to estimate continuous normalizing flow, which deforms source shape consistently towards
+                the target, with intermediate point clouds as weak guidance. Our key insight is to leverage large vision models (LVMs) to associate shapes and
+                therefore obtain much richer semantic information on the relationship between shapes than the ad-hoc feature extraction and alignment. As consequence, SRIF achieves high-quality dense correspondences on challenging
+                shape pairs, but also delivers smooth, semantically meaningful interpolation in between. Empirical evidences justify the effectiveness and superiority of our method as well as specific design choices. </p>
+            <p class="pubothers">Proc. The 17th ACM SIGGRAPH Conference and Exhibition on Computer Graphics and Interactive Techniques in Asia, 2024</p>
+            <div class="pubclick">
+                <a href="html/SRIF.html" class="pubbutton">[pdf 3.2M]</a>
+<!--                <a href="javascript:void(0)" onclick="redirectToPageB('Nanowatt')">[BibTex]</a>-->
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/EHOF.png">
+        </div>
+        <div id="EHOF" class="pubtxt">
+            <h3 class="pubtitle">Enhancing Human Optical Flow via 3D Spectral Prior</h3>
+            <p class="pubothers">Shiwei Mao, Mingze Sun, Ruqi Huang</p>
+            <p class="pubabstract"><strong>Abstract:</strong> In this paper, we consider the problem of human optical flow estimation, which is critical in a series of human-centric computer vision tasks. Recent deep learning-based optical flow models have achieved considerable accuracy and generalization by
+                incorporating various kinds of priors. However, the majority either rely on large-scale 2D annotations or rigid priors, overlooking the 3D non-rigid nature of human articulations. To this end, we advocate enhancing human optical flow estimation via
+                3D spectral prior-aware pretraining, which is based on the well-known functional maps formulation in 3D shape matching. Our
+                pretraining can be performed with synthetic human shapes. More specifically, we first render shapes to images and then leverage
+                the natural inclusion maps from images to shapes to lift 2D optical flow into 3D correspondences, which are further encoded
+                as functional maps. Such lifting operation allows to inject the intrinsic geometric features encoded in the spectral representations into optical flow learning, leading to improvement of the latter, especially in the presence of non-rigid deformations.
+                In practice, we establish a pretraining pipeline tailored for triangular meshes, which is general regarding target optical flow
+                network. It is worth noting that it does not introduce any additional learning parameters but only require some pre-computed
+                eigen decomposition on the meshes. For RAFT and GMA, our pretraining task achieves improvements of 12.8% and 4.9% in
+                AEPE on the SHOF benchmark, respectively.</p>
+            <p class="pubothers">Proc. The 32th Pacific Conference on Computer Graphics and Applications, 2024</p>
+            <div class="pubclick">
+                <a href="html/EHOF.html" class="pubbutton">[pdf 7.7M]</a>
+<!--                <a href="javascript:void(0)" onclick="redirectToPageB('Nanowatt')">[BibTex]</a>-->
+            </div>
+        </div>
+    </div>
     <div class="pubdiv">
         <div class="pubimg">
             <img width="200px" src="img/Nanowatt.png">
@@ -523,7 +571,7 @@
             <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we propose a novel method, which we call CONSISTENT ZOOMOUT, for efficiently refining correspondences among deformable 3D shape collections, while promoting the resulting map consistency. Our formulation is closely related to a recent unidirectional spectral refinement framework, but naturally integrates map consistency constraints into the refinement. Beyond that, we show further that our formulation can be adapted to recover the underlying isometry among near-isometric shape collections with a theoretical guarantee, which is absent in the other spectral map synchronization frameworks. We demonstrate that our method improves the accuracy compared to the competing methods when synchronizing correspondences in both near-isometric and heterogeneous shape collections, but also significantly outperforms the baselines in terms of map consistency.</p>
             <p class="pubothers">Proc. Symposium on Geometry Processing, 2020</p>
             <div class="pubclick">
-                <a href="html/ConsistentZoomOut.html" class="pubbutton">[pdf 34.8M]</a>
+                <a href="html/ConsistentZoomOut.html" class="pubbutton">[pdf 1.2M]</a>
                 <a href="https://github.com/ruqihuang/SGP2020_ConsistentZoomOut" class="pubbutton">[code]</a>
                 <a href="https://www.youtube.com/watch?v=WhduuY9o8QQ&t=24s" class="pubbutton">[video]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('ConsistentZoomOut')">[BibTex]</a>
@@ -556,7 +604,7 @@
             <p class="pubabstract"><strong>Abstract:</strong>  We propose a novel construction for extracting a central or limit shape in a shape collection, connected via a functional map network. Our approach is based on enriching the latent space induced by a functional map network with an additional natural metric structure. We call this shape-like dual object the limit shape and show that its construction avoids many of the biases introduced by selecting a fixed base shape or template. We also show that shape differences between real shapes and the limit shape can be computed and characterize the unique properties of each shape in a collection – leading to a compact and rich shape representation. We demonstrate the utility of this representation in a range of shape analysis tasks, including improving functional maps in difficult situations through the mediation of limit shapes, understanding and visualizing the variability within and across different shape classes, and several others. In this way, our analysis sheds light on the missing geometric structure in previously used latent functional spaces, demonstrates how these can be addressed and finally enables a compact and meaningful shape representation useful in a variety of practical applications.</p>
             <p class="pubothers">Proc. Symposium on Geometry Processing, 2019</p>
             <div class="pubclick">
-                <a href="html/LimitShape.html" class="pubbutton">[pdf 30.9M]</a>
+                <a href="html/LimitShape.html" class="pubbutton">[pdf 1.5M]</a>
                 <a href="https://github.com/ruqihuang/LimitShape" class="pubbutton">[code]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('LimitShape')">[BibTex]</a>
             </div>
@@ -623,12 +671,10 @@
                 <li>Yujia Chen, 2022-now</li>
                 <li>Fengdi Zhang, 2022-now</li>
                 <li>Xinyu Jiang, 2023-now</li>
+                <li>Chen Guo, 2024-now</li>
             </ul>
             <h3>MPhil Students</h3>
             <ul>
-                <li>Zequn Chen, 2021-now</li>
-                <li>Chen Guo, 2021-now</li>
-                <li>Ting Zhang, 2021-now</li>
                 <li>Mingze Sun, 2022-now</li>
                 <li>Yurun Chen, 2022-now</li>
                 <li>Jin Wang, 2022-now</li>
@@ -638,10 +684,17 @@
                 <li>Zhangquan Chen, 2023-now</li>
                 <li>Zhejia Cai, 2023-now</li>
                 <li>Xiaoyu Hu, 2023-now</li>
+                <li>Junhao Chen, 2024-now</li>
+                <li>Jingjia Mao, 2024-now</li>
+                <li>Cheng Zeng, 2024-now</li>
+                <li>Keyi Chen, 2024-now</li>
+                <li>Zijian Cheng, 2024-now</li>
                 <li>Kaisan Li, 2020-2023</li>
                 <li>Leyao Liu, 2020-2023</li>
                 <li>Xuechao Chen, 2020-2023</li>
-
+                <li>Zequn Chen, 2021-2024</li>
+                <li>Chen Guo, 2021-2024</li>
+                <li>Ting Zhang, 2021-2024</li>
             </ul>
         </div>
     </div>
