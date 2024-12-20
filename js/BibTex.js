@@ -250,6 +250,22 @@ if (id === 'DFR') {
         '   URL = {https://www.science.org/doi/abs/10.1126/sciadv.adn2031},\n' +
         '   eprint = {https://www.science.org/doi/pdf/10.1126/sciadv.adn2031},\n' +
         '}';
+} else if (id === 'SRIF') {
+    contentParagraph.textContent = '@inproceedings{10.1145/3680528.3687567,\n' +
+        '   author = {Sun, Mingze and Guo, Chen and Jiang, Puhua and Mao, Shiwei and Chen, Yurun and Huang, Ruqi},\n' +
+        '   title = {SRIF: Semantic Shape Registration Empowered by Diffusion-based Image Morphing and Flow Estimation},\n' +
+        '   year = {2024},\n' +
+        '   isbn = {9798400711312},\n' +
+        '   publisher = {Association for Computing Machinery},\n' +
+        '   address = {New York, NY, USA},\n' +
+        '   url = {https://doi.org/10.1145/3680528.3687567},\n' +
+        '   doi = {10.1145/3680528.3687567},\n' +
+        '   booktitle = {SIGGRAPH Asia 2024 Conference Papers},\n' +
+        '   articleno = {81},\n' +
+        '   numpages = {11},\n' +
+        '   keywords = {Shape registration, Image morphing, Continuous normalizing flow.},\n' +
+        "   series = {SA '24}\n" +
+        '   }';
 } else {
     contentParagraph.textContent = 'None';
 }
