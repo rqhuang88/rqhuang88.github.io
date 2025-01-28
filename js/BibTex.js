@@ -266,6 +266,17 @@ if (id === 'DFR') {
         '   keywords = {Shape registration, Image morphing, Continuous normalizing flow.},\n' +
         "   series = {SA '24}\n" +
         '   }';
+} else if (id === 'EMNN') {
+    contentParagraph.textContent = '@article{ShaoZhouYanGuoZhaoHuangFang+2025,\n' +
+        '   url = {https://doi.org/10.1515/nanoph-2024-0504},\n' +
+        '   title = {Reliable, efficient, and scalable photonic inverse design empowered by physics-inspired deep learning},\n' +
+        '   title = {},\n' +
+        '   author = {Guocheng Shao and Tiankuang Zhou and Tao Yan and Yanchen Guo and Yun Zhao and Ruqi Huang and Lu Fang},\n' +
+        '   journal = {Nanophotonics},\n' +
+        '   doi = {doi:10.1515/nanoph-2024-0504},\n' +
+        '   year = {2025},\n' +
+        '   lastchecked = {2025-01-28}\n' +
+        '   }';
 } else {
     contentParagraph.textContent = 'None';
 }
