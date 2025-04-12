@@ -35,10 +35,10 @@
     <div class="newsdiv">
         <div class="newstxt">
             <ul>
+                <li><strong>2025-02:</strong> Two papers were accepted by CVPR 2025.</li>
                 <li><strong>2025-01:</strong> One paper was accepted by Nanophotonics.</li>
                 <li><strong>2024-12:</strong> One paper was accepted by IJCV 2024.</li>
                 <li><strong>2024-07:</strong> One paper was accepted by SIGGRAPH Asia 2024 and PG 2024, respectively.</li>
-                <li><strong>2024-06:</strong> One paper was accepted by Science Advances.</li>
             </ul>
         </div>
     </div>
@@ -46,6 +46,39 @@
 
 <div id="Publications" class="tabcontent">
     <h2>Selected Publications</h2>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/DRiVE.png">
+        </div>
+        <div id="EMNN" class="pubtxt">
+            <h3 class="pubtitle">DRiVE: Diffusion-based Rigging Empowers Generation of Versatile and Expressive Characters</h3>
+            <p class="pubothers">Mingze Sun, Junhao Chen, Junting Dong, Yurun Chen, Xinyu Jiang, Shiwei Mao, Puhua Jiang, Jingbo Wang, Bo Dai, Ruqi Huang</p>
+            <p class="pubabstract"><strong>Abstract:</strong> Recent advances in generative models have enabled high-quality 3D character reconstruction from multi-modal. However, animating these generated characters remains a challenging task, especially for complex elements like garments and hair, due to the lack of large-scale datasets and effective rigging methods. To address this gap, we curate AnimeRig, a large-scale dataset with detailed skeleton and skinning annotations. Building upon this, we propose DRiVE, a novel framework for generating and rigging 3D human characters with intricate structures. Unlike existing methods, DRiVE utilizes a 3D Gaussian representation, facilitating efficient animation and high-quality rendering. We further introduce GSDiff, a 3D Gaussian-based diffusion module that predicts joint positions as spatial distributions, overcoming the limitations of regression-based approaches. Extensive experiments demonstrate that DRiVE achieves precise rigging results, enabling realistic dynamics for clothing and hair, and surpassing previous methods in both quality and versatility. The code and dataset will be made public for academic use upon acceptance.</p>
+            <p class="pubothers">Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025</p>
+            <div class="pubclick">
+                <a href="html/DRiVE.html" class="pubbutton">[pdf 1.5M]</a>
+                <a href="https://driveavatar.github.io/" class="pubbutton">[webset]</a>
+<!--                <a href="javascript:void(0)" onclick="redirectToPageB('EMNN')">[BibTex]</a>-->
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/DV-Matcher.png">
+        </div>
+        <div id="EMNN" class="pubtxt">
+            <h3 class="pubtitle">DV-Matcher: Deformation-based Non-Rigid Point Cloud Matching Guided by Pre-trained Visual Features</h3>
+            <p class="pubothers">Zhangquan Chen, Puhua Jiang, Ruqi Huang</p>
+            <p class="pubabstract"><strong>Abstract:</strong> In this paper, we present DV-Matcher, a novel learning-based framework for estimating dense correspondences between non-rigidly deformable point clouds. Learning directly from unstructured point clouds without meshing or manual labelling, our framework delivers high-quality dense correspondences, which is of significant practical utility in point cloud processing. Our key contributions are two-fold: First, we propose a scheme to inject prior knowledge from pre-trained vision models into geometric feature learning, which effectively complements the local nature of geometric features with global and semantic information; Second, we propose a novel deformation-based module to promote the extrinsic alignment induced by the learned correspondences, which effectively enhances the feature learning. Experimental results show that our method achieves state-of-the-art results in matching non-rigid point clouds in both near-isometric and heterogeneous shape collection as well as more realistic partial and noisy data.</p>
+            <p class="pubothers">Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025</p>
+            <div class="pubclick">
+                <a href="html/DV-Matcher.html" class="pubbutton">[pdf 3.4M]</a>
+                <a href="https://github.com/rqhuang88/DV-Matcher" class="pubbutton">[code]</a>
+                <a href="https://drive.google.com/drive/folders/1CK9qihI2yyxkuXsxSHqzTRhLdTk8qghn" class="pubbutton">[dataset]</a>
+<!--                <a href="javascript:void(0)" onclick="redirectToPageB('EMNN')">[BibTex]</a>-->
+            </div>
+        </div>
+    </div>
     <div class="pubdiv">
         <div class="pubimg">
             <img width="200px" src="img/EMNN.jpg">
@@ -76,7 +109,7 @@
                 diffractive networks, so as to further promote the development of computing metasystems.</p>
             <p class="pubothers">Nanophotonics</p>
             <div class="pubclick">
-                <a href="https://www.degruyter.com/document/doi/10.1515/nanoph-2024-0504/html" class="pubbutton">[pdf 2.1M]</a>
+                <a href="https://www.degruyter.com/document/doi/10.1515/nanoph-2024-0504/html" class="pubbutton">[pdf 4.2M]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('EMNN')">[BibTex]</a>
             </div>
         </div>
@@ -101,7 +134,7 @@
             <p class="pubothers">International Journal of Computer Vision, 2024</p>
             <div class="pubclick">
                 <a href="html/BeyondTalking.html" class="pubbutton">[pdf 2.1M]</a>
-<!--                <a href="javascript:void(0)" onclick="redirectToPageB('BeyondTalking')">[BibTex]</a>-->
+                <a href="javascript:void(0)" onclick="redirectToPageB('BeyondTalking')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -150,7 +183,7 @@
             <p class="pubothers">Proc. Pacific Graphics, 2024</p>
             <div class="pubclick">
                 <a href="html/EHOF.html" class="pubbutton">[pdf 7.7M]</a>
-<!--                <a href="javascript:void(0)" onclick="redirectToPageB('Nanowatt')">[BibTex]</a>-->
+                <a href="javascript:void(0)" onclick="redirectToPageB('EHOF')">[BibTex]</a>
             </div>
         </div>
     </div>
