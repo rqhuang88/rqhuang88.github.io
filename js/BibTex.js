@@ -266,16 +266,35 @@ if (id === 'DFR') {
         '   keywords = {Shape registration, Image morphing, Continuous normalizing flow.},\n' +
         "   series = {SA '24}\n" +
         '   }';
+} else if (id === 'EHOF') {
+    contentParagraph.textContent = '@inproceedings{10.2312:pg.20241314,\n' +
+        '   booktitle = {Pacific Graphics Conference Papers and Posters},\n' +
+        '   editor = {Chen, Renjie and Ritschel, Tobias and Whiting, Emily},\n' +
+        '   title = {{Enhancing Human Optical Flow via 3D Spectral Prior}},\n' +
+        '   author = {Mao, Shiwei and Sun, Mingze and Huang, Ruqi},\n' +
+        '   year = {2024},\n' +
+        '   publisher = {The Eurographics Association},\n' +
+        '   ISBN = {978-3-03868-250-9},\n' +
+        '   DOI = {10.2312/pg.20241314}\n' +
+        '   }';
 } else if (id === 'EMNN') {
     contentParagraph.textContent = '@article{ShaoZhouYanGuoZhaoHuangFang+2025,\n' +
         '   url = {https://doi.org/10.1515/nanoph-2024-0504},\n' +
         '   title = {Reliable, efficient, and scalable photonic inverse design empowered by physics-inspired deep learning},\n' +
-        '   title = {},\n' +
         '   author = {Guocheng Shao and Tiankuang Zhou and Tao Yan and Yanchen Guo and Yun Zhao and Ruqi Huang and Lu Fang},\n' +
         '   journal = {Nanophotonics},\n' +
         '   doi = {doi:10.1515/nanoph-2024-0504},\n' +
         '   year = {2025},\n' +
         '   lastchecked = {2025-01-28}\n' +
+        '   }';
+} else if (id === 'BeyondTalking') {
+    contentParagraph.textContent = '@article{BeyondTalking,\n' +
+        '   url = {https://doi.org/10.1007/s11263-024-02300-7},\n' +
+        '   title = {Beyond Talking – Generating Holistic 3D Human Dyadic Motion for Communication},\n' +
+        '   author = {Mingze Sun and Chao Xu and Xinyu Jiang and Yang Liu and Baigui Sun and Ruqi Huang},\n' +
+        '   journal = {International Journal of Computer Vision},\n' +
+        '   doi = {10.1007/s11263-024-02300-7},\n' +
+        '   year = {2024},\n' +
         '   }';
 } else {
     contentParagraph.textContent = 'None';
