@@ -270,7 +270,7 @@ if (id === 'DFR') {
     contentParagraph.textContent = '@inproceedings{10.2312:pg.20241314,\n' +
         '   booktitle = {Pacific Graphics Conference Papers and Posters},\n' +
         '   editor = {Chen, Renjie and Ritschel, Tobias and Whiting, Emily},\n' +
-        '   title = {{Enhancing Human Optical Flow via 3D Spectral Prior}},\n' +
+        '   title = {Enhancing Human Optical Flow via 3D Spectral Prior},\n' +
         '   author = {Mao, Shiwei and Sun, Mingze and Huang, Ruqi},\n' +
         '   year = {2024},\n' +
         '   publisher = {The Eurographics Association},\n' +
@@ -296,6 +296,15 @@ if (id === 'DFR') {
         '   doi = {10.1007/s11263-024-02300-7},\n' +
         '   year = {2024},\n' +
         '   }';
-} else {
+} else if (id === 'Adaptive') {
+    contentParagraph.textContent = '@article{Zhang2025,\n' +
+        '   url = {https://doi.org/10.1038/s41612-025-01044-6},\n' +
+        '   title = {Adaptive high-resolution mapping of air pollution with a novel implicit 3D representation approach},\n' +
+        '   author = {Ting Zhang and Bo Zheng and Ruqi Huang},\n' +
+        '   journal = {npj Climate and Atmospheric Science},\n' +
+        '   doi = {10.1038/s41612-025-01044-6},\n' +
+        '   year = {2025},\n' +
+        '   }';
+}else {
     contentParagraph.textContent = 'None';
 }
