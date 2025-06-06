@@ -305,6 +305,15 @@ if (id === 'DFR') {
         '   doi = {10.1038/s41612-025-01044-6},\n' +
         '   year = {2025},\n' +
         '   }';
+}else if (id === 'VIPTour') {
+    contentParagraph.textContent = '@article{lin2025ai,\n' +
+        '   url = {https://doi.org/10.1038/s44387-025-00006-w},\n' +
+        '   title = {AI system facilitates people with blindness and low vision in interpreting and experiencing unfamiliar environments},\n' +
+        '   author = {Lin, Haozhe and Gong, Jiangtao and Wang, Yu and Zhang, Jinsong and Bai, Bing and Zhang, Yan and Wang, Luyao and Wei, Chenyu and Cao, Yancheng and Li, Kun and others},\n' +
+        '   journal = {npj Artificial Intelligence},\n' +
+        '   doi = {10.1038/s44387-025-00006-w},\n' +
+        '   year = {2025},\n' +
+        '   }';
 }else {
     contentParagraph.textContent = 'None';
 }
