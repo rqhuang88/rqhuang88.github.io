@@ -314,6 +314,15 @@ if (id === 'DFR') {
         '   doi = {10.1038/s44387-025-00006-w},\n' +
         '   year = {2025},\n' +
         '   }';
+}else if (id === 'ARMO') {
+    contentParagraph.textContent = '@article{sun2025armo,\n' +
+        '   url = {https://doi.org/10.48550/arXiv.2503.20663},\n' +
+        '   title = {ARMO: Autoregressive Rigging for Multi-Category Objects},\n' +
+        '   author = {Sun, Mingze and Mao, Shiwei and Chen, Keyi and Chen, Yurun and Lu, Shunlin and Wang, Jingbo and Dong, Junting and Huang, Ruqi},\n' +
+        '   journal = {arXiv preprint arXiv:2503.20663},\n' +
+        '   doi = {10.48550/arXiv.2503.20663},\n' +
+        '   year = {2025},\n' +
+        '   }';
 }else {
     contentParagraph.textContent = 'None';
 }
