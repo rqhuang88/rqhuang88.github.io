@@ -35,10 +35,11 @@
     <div class="newsdiv">
         <div class="newstxt">
             <ul>
+                <li><strong>2025-07:</strong> Two papers were accepted by ICCV 2025 and IROS 2025.</li>
                 <li><strong>2025-05:</strong> Two papers were accepted by npj Climate and Atmospheric Science and npj Artificial Intelligence.</li>
                 <li><strong>2025-02:</strong> Two papers were accepted by CVPR 2025.</li>
                 <li><strong>2025-01:</strong> One paper was accepted by Nanophotonics.</li>
-                <li><strong>2024-12:</strong> One paper was accepted by IJCV 2024.</li>
+<!--                 <li><strong>2024-12:</strong> One paper was accepted by IJCV 2024.</li> -->
             </ul>
         </div>
     </div>
@@ -46,6 +47,38 @@
 
 <div id="Publications" class="tabcontent">
     <h2>Selected Publications</h2>
+
+        <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/ARMO.png">
+        </div>
+        <div id="ARMO" class="pubtxt">
+            <h3 class="pubtitle">ARMO:Autoregressive Rigging for Multi-Category Objects</h3>
+            <p class="pubothers"> Mingze Sun, Shiwei Mao, Keyi Chen, Yurun Chen, Shunlin Lu, Jingbo Wang, Junting Dong and Ruqi Huang</p>
+            <p class="pubabstract"><strong>Abstract:</strong> Recent advancements in large-scale generative models have significantly improved the quality and diversity of 3D shape generation. However, most existing methods focus primarily on generating static 3D models, overlooking the potentially dynamic nature of certain shapes, such as humanoids, animals, and insects. To address this gap, we focus on rigging, a fundamental task in animation that establishes skeletal structures and skinning for 3D models. In this paper, we introduce OmniRig, the first large-scale rigging dataset, comprising 79,499 meshes with detailed skeleton and skinning information. Unlike traditional benchmarks that rely on predefined standard poses (e.g., A-pose, T-pose), our dataset embraces diverse shape categories, styles, and poses. Leveraging this rich dataset, we propose ARMO, a novel rigging framework that utilizes an autoregressive model to predict both joint positions and connectivity relationships in a unified manner. By treating the skeletal structure as a complete graph and discretizing it into tokens, we encode the joints using an auto-encoder to obtain a latent embedding and an autoregressive model to predict the tokens. A mesh-conditioned latent diffusion model is used to predict the latent embedding for conditional skeleton generation. Our method addresses the limitations of regression-based approaches, which often suffer from error accumulation and suboptimal connectivity estimation. Through extensive experiments on the OmniRig dataset, our approach achieves state-of-the-art performance in skeleton prediction, demonstrating improved generalization across diverse object categories. The code and dataset will be made public for academic use upon acceptance.</p>
+            <p class="pubothers">Proc. International Conference on Computer Vision(ICCV), 2025</p>
+            <div class="pubclick">
+                <a href="https://arxiv.org/abs/2503.20663" class="pubbutton">[pdf]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('ARMO')">[BibTex]</a>
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/DISCOVERSE.png">
+        </div>
+        <div id="DISCOVERSE" class="pubtxt">
+            <h3 class="pubtitle">DISCOVERSE: Efficient Robot Simulation in Complex High-Fidelity Environments</h3>
+            <p class="pubothers">Yufei Jia, Guangyu Wang,Yuhang Dong, Junzhe Wu, Yupei Zeng, Haonan Lin, Zifan Wang, Haizhou Ge, Weibin Gu, Kairui Ding, Zike Yan, Yunjie Cheng, Yue Li, Ziming Wang, Chuxuan Li, Wei Sui, Lu Shi, Guanzhong Tian, Ruqi Huang and Guyue Zhou</p>
+            <p class="pubabstract"><strong>Abstract:</strong> We present DISCOVERSE, the first unified, modular, open-source 3DGS-based simulation framework for Real2Sim2Real robot learning. It features a holistic Real2Sim pipeline that synthesizes hyper-realistic geometry and appearance of complex real-world scenarios, paving the way for analyzing and bridging the Sim2Real gap. Powered by Gaussian Splatting and MuJoCo, DISCOVERSE enables massively parallel simulation of multiple sensor modalities and accurate physics, with inclusive supports for existing 3D assets, robot models, and ROS plugins, empowering large-scale robot learning and complex robotic benchmarks. Through extensive experiments on imitation learning, DISCOVERSE demonstrates state-of-the-art zero-shot Sim2Real transfer performance compared to existing simulators. For code and demos: https://airdiscoverse.github.io/.</p>
+            <p class="pubothers">Proc. IEEE International Conference on Intelligent Robots and Systems (IROS), 2025</p>
+            <div class="pubclick">
+                <a href="html/DISCOVERSE.html" class="pubbutton">[pdf 3.6M]</a>
+                <a href="https://air-discoverse.github.io/" class="pubbutton">[webset]</a>
+            </div>
+        </div>
+    </div>
+    
     <div class="pubdiv">
         <div class="pubimg">
             <img width="200px" src="img/VIPTour.png">
