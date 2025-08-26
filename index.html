@@ -35,10 +35,11 @@
     <div class="newsdiv">
         <div class="newstxt">
             <ul>
+                <li><strong>2025-08:</strong> One paper was accepted by TPAMI 2025.</li>
                 <li><strong>2025-07:</strong> Two papers were accepted by ICCV 2025 and IROS 2025.</li>
                 <li><strong>2025-05:</strong> Two papers were accepted by npj Climate and Atmospheric Science and npj Artificial Intelligence.</li>
                 <li><strong>2025-02:</strong> Two papers were accepted by CVPR 2025.</li>
-                <li><strong>2025-01:</strong> One paper was accepted by Nanophotonics.</li>
+<!--                 <li><strong>2025-01:</strong> One paper was accepted by Nanophotonics.</li> -->
 <!--                 <li><strong>2024-12:</strong> One paper was accepted by IJCV 2024.</li> -->
             </ul>
         </div>
@@ -48,7 +49,22 @@
 <div id="Publications" class="tabcontent">
     <h2>Selected Publications</h2>
 
-        <div class="pubdiv">
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/Combo.png">
+        </div>
+        <div id="Combo" class="pubtxt">
+            <h3 class="pubtitle"> Combo: Co-speech holistic 3D human motion generation and efficient customizable adaptation in harmony</h3>
+            <p class="pubothers"> Chao Xu, Mingze Sun, Zhi-Qi Cheng, Fei Wang, Yang Liu, Baigui Sun, Ruqi Huang and Alexander Hauptmann</p>
+            <p class="pubabstract"><strong>Abstract:</strong> In this paper, we propose a novel framework, Combo, for harmonious co-speech holistic 3D human motion generation and efficient customizable adaption. In particular, we identify that one fundamental challenge as the multiple-input-multiple-output (MIMO) nature of the generative model of interest. More concretely, on the input end, the model typically consumes both speech signals and character guidance (e.g., identity and emotion), which hinders further adaptation to varying guidance; on the output end, holistic human motions mainly consist of facial expressions and body movements, which are inherently correlated but non-trivial to coordinate in current data-driven generation process. In response to the above challenge, we propose tailored designs to both ends. For the former, we propose to pre-train on data regarding a fixed identity with neutral emotion, and defer the incorporation of customizable conditions (identity and emotion) to fine-tuning stage, which is boosted by our novel X-Adapter for parameter-efficient fine-tuning. For the latter, we propose a simple yet effective transformer design, DU-Trans, which first divides into two branches to learn individual features of face expression and body movements, and then unites those to learn a joint bi-directional distribution and directly predicts combined coefficients. Evaluated on BEAT2 and SHOW datasets, Combo is highly effective in generating high-quality motions but also efficient in transferring identity and emotion. Project website: Combo</p>
+            <p class="pubothers">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025</p>
+            <div class="pubclick">
+                <a href="https://arxiv.org/pdf/2408.09397" class="pubbutton">[pdf]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('Combo')">[BibTex]</a>
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
         <div class="pubimg">
             <img width="200px" src="img/ARMO.png">
         </div>
