@@ -323,6 +323,15 @@ if (id === 'DFR') {
         '   doi = {10.48550/arXiv.2503.20663},\n' +
         '   year = {2025},\n' +
         '   }';
+}else if (id === 'Combo') {
+    contentParagraph.textContent = '@article{xu2024combo,\n' +
+        '   url = {https://doi.org/10.48550/arXiv.2408.09397},\n' +
+        '   title = {Combo: Co-speech holistic 3D human motion generation and efficient customizable adaptation in harmony},\n' +
+        '   author = {Xu, Chao and Sun, Mingze and Cheng, Zhi-Qi and Wang, Fei and Liu, Yang and Sun, Baigui and Huang, Ruqi and Hauptmann, Alexander},\n' +
+        '   journal = {arXiv preprint arXiv:2408.09397},\n' +
+        '   doi = {10.48550/arXiv.2408.09397},\n' +
+        '   year = {2024},\n' +
+        '   }';
 }else {
     contentParagraph.textContent = 'None';
 }
