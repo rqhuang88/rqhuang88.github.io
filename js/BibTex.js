@@ -332,6 +332,15 @@ if (id === 'DFR') {
         '   doi = {10.48550/arXiv.2408.09397},\n' +
         '   year = {2024},\n' +
         '   }';
+}else if (id === 'PIN') {
+    contentParagraph.textContent = '@article{yan2025complete,\n' +
+        '   url = {https://doi.org/10.1038/s43588-025-00866-x},\n' +
+        '   title = {A complete photonic integrated neuron for nonlinear all-optical computing},\n' +
+        '   author = {Yan, Tao and Guo, Yuting and Zhou, Tong and others},\n' +
+        '   journal = {Nature Computational Science},\n' +
+        '   doi = {10.1038/s43588-025-00866-x},\n' +
+        '   year = {2025},\n' +
+        '   }';
 }else {
     contentParagraph.textContent = 'None';
 }
