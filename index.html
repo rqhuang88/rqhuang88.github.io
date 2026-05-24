@@ -35,12 +35,15 @@
     <div class="newsdiv">
         <div class="newstxt">
             <ul>
+                <!-- # 20260524 -->
+                <li><strong>2026-05:</strong> One paper was accepted by RSS 2026.</li>
+                <li><strong>2026-05:</strong> One paper was accepted by ICML 2026.</li>
                 <!-- # 20260223 -->
                 <li><strong>2026-02:</strong> Three papers were accepted by CVPR 2026.</li>
                 <!-- # 20260202 -->
-                <li><strong>2026-02:</strong> Two papers were accepted by ICLR 2026 and ICRA 2026.</li>
+                <!-- <li><strong>2026-02:</strong> Two papers were accepted by ICLR 2026 and ICRA 2026.</li> -->
                 <!-- # 20250826 -->
-                <li><strong>2025-11:</strong> Two papers were accepted by AAAI 2026 and 3DV 2026.</li>
+                <!-- <li><strong>2025-11:</strong> Two papers were accepted by AAAI 2026 and 3DV 2026.</li> -->
                 <!-- <li><strong>2025-09:</strong> One paper was accepted by Nature Computational Science 2025.</li> -->
                 <!-- <!-- # 20250826 -->
                 <!-- <li><strong>2025-08:</strong> One paper was accepted by TPAMI 2025.</li> -->
@@ -58,6 +61,68 @@
 <div id="Publications" class="tabcontent">
     <h2>Selected Publications</h2>
 
+    <!-- # 20260524 -->
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/GS-Playground.png">
+        </div>
+        <div id="GS-Playground" class="pubtxt">
+            <h3 class="pubtitle"> GS-Playground: A High-Throughput Photorealistic Simulator for Vision-Informed Robot Learning </h3>
+            <p class="pubothers"> Yufei Jia, Heng Zhang, Ziheng Zhang, Junzhe Wu, Mingrui Yu, Zifan Wang, Dixuan Jiang, Zheng Li, Chenyu Cao, Zhuoyuan Yu, Xun Yang, Haizhou Ge, Yuchi Zhang, Jiayuan Zhang, Zhenbiao Huang, Tianle Liu, Shenyu Chen, Jiacheng Wang, Bin Xie, Xuran Yao, Xiwa Deng, Guangyu Wang, Jinzhi Zhang, Lei Hao, Zhixing Chen, Yuxiang Chen, Anqi Wang, Hongyun Tian, Yiyi Yan, Zhanxiang Cao, Yizhou Jiang, Hanyang Shao, Yue Li, Lu Shi, Wei Sui, Hanqing Cui, Yusen Qin, Ruqi Huang, Bokui Chen, Lei Han, Tiancai Wang, Guyue Zhou </p>
+            <p class="pubabstract"><strong>Abstract:</strong> Embodied AI research is undergoing a shift toward vision-centric perceptual paradigms. While massively parallel
+                simulators have catalyzed breakthroughs in proprioception-based
+                locomotion, their potential remains largely untapped for visioninformed tasks due to the prohibitive computational overhead of
+                large-scale photorealistic rendering. Furthermore, the creation
+                of simulation-ready 3D assets heavily relies on labor-intensive
+                manual modeling, while the significant sim-to-real physical gap
+                hinders the transfer of contact-rich manipulation policies. To
+                address these bottlenecks, we propose GS-Playground, a multimodal simulation framework for high-throughput, photorealistic
+                robot learning in interactive rigid-body settings. We develop
+                MotrixSim, a novel high-performance parallel physics engine,
+                specifically designed to integrate with a batch 3D Gaussian
+                Splatting (3DGS) rendering pipeline to ensure high-fidelity
+                synchronization. Our system achieves an aggregate rendering
+                throughput of 104 FPS across 2048 environments at 640 × 480
+                resolution, significantly lowering the barrier for large-scale visual
+                RL. Additionally, we introduce a Real2Sim workflow that reconstructs photorealistic and memory-efficient simulation-ready
+                environments, reducing the manual effort required to create
+                complex scenes for robot interaction. Extensive experiments
+                on locomotion, navigation, and manipulation demonstrate that
+                GS-Playground enables high-throughput photorealistic RL
+                and robust Sim2Real transfer for interactive rigid-body robot learning. </p>
+            <p class="pubothers"> Robotics: Science and Systems (RSS), 2026 </p>
+            <div class="pubclick">
+                <a href="html/GS-Playground.html" class="pubbutton">[pdf]</a>
+                <a href="https://gsplayground.github.io" class="pubbutton">[code]</a>
+            </div>
+        </div>
+    </div>
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/OmniVideo-R1.png">
+        </div>
+        <div id="OmniVideo-R1" class="pubtxt">
+            <h3 class="pubtitle">OmniVideo-R1: Reinforcing Audio-visual Reasoning with Query Intention and Modality Attention</h3>
+            <p class="pubothers">Zhangquan Chen, Jiale Tao, Ruihuang Li, Yihao Hu, Ruitao Chen, Zhantao Yang, Xinlei Yu, Haodong Jing, Manyuan Zhang, Shuai Shao, Biao Wang, Qinglin Lu, Ruqi Huang </p>
+            <p class="pubabstract"><strong>Abstract:</strong> While humans perceive the world through diverse
+                modalities that operate synergistically to support
+                a holistic understanding of their surroundings,
+                existing omnivideo models still face substantial
+                challenges on audio-visual understanding tasks.
+                In this paper, we propose OmniVideo-R1, a
+                novel reinforced framework that improves mixedmodality reasoning. OmniVideo-R1 empowers models to “think with omnimodal cues” by
+                two key strategies: (1) query-intensive grounding based on self-supervised learning paradigms;
+                and (2) modality-attentive fusion built upon contrastive learning paradigms. Extensive experiments on multiple benchmarks demonstrate that
+                OmniVideo-R1 consistently outperforms strong
+                baselines, highlighting its effectiveness and robust
+                generalization capabilities. </p>
+            <p class="pubothers"> International Conference on Machine Learning (ICML), 2026 </p>
+            <div class="pubclick">
+                <a href="html/OmniVideo-R1.html" class="pubbutton">[pdf]</a>
+            </div>
+        </div>
+    </div>
+    
     <!-- # 20260320 -->
     <div class="pubdiv">
         <div class="pubimg">
