@@ -63,6 +63,126 @@
 <div id="Publications" class="tabcontent">
     <h2>Selected Publications</h2>
 
+    <!-- 20260706 -->
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/DANTE-W.png">
+        </div>
+        <div id="DANTE-W" class="pubtxt">
+            <h3 class="pubtitle"> DANTE-W: Diffuse Albedo Neural Texturing in the Wild </h3>
+            <p class="pubothers"> Guangyu Wang, Tianheng Lu, Ruqi Huang and Lu Fang </p>
+            <p class="pubabstract"><strong>Abstract:</strong> Classical mesh texturing techniques blend captured multiview images directly, which inevitably suffer from baked-in shading and
+                casted shadows that compromise visual fidelity during relighting. To circumvent this issue, we present a neural texturing framework, namely
+                Dante-w, to enable high-fidelity diffuse albedo texture recovery from
+                unstructured image collections for large-scale, in-the-wild scenes, which
+                integrates seamlessly with traditional 3D reconstruction pipelines. Given
+                a reconstructed mesh and its surface parameterization, our method fuses
+                view-space generative albedo priors into a coherent texture space via
+                an expressive neural representation, while substantially enhancing finegrained textural details through physically principled neural rendering.
+                To comprehensively evaluate our method, we curate a benchmark dataset
+                featuring diverse, fine-grained textures, comprising both real-world inthe-wild scenes and synthetic objects. Extensive experiments verify the
+                effectiveness of our approach in reconstructing accurate albedo textures
+                and boosting relighting fidelity. Project page: dante-wild.github.io. </p>
+            <p class="pubothers"> European Conference on Computer Vision (ECCV), 2026 </p>
+            <div class="pubclick">
+                <a href="html/DANTE-W.html" class="pubbutton">[pdf]</a>
+                <a href="https://dante-wild.github.io/" class="pubbutton">[code]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/OVOW.png">
+        </div>
+        <div id="OVOW" class="pubtxt">
+            <h3 class="pubtitle"> One Video, One World: Turning Monocular Video into Physical 4D Scenes </h3>
+            <p class="pubothers"> Junhao Chen, Boran Zhang, Mingjin Chen, Henghaofan Zhang, Saining Zhang, Congcong Zhu, Hao Zhao, Ruqi Huang, Zhihao Li and Yufei Wang </p>
+            <p class="pubabstract"><strong>Abstract:</strong> We introduce OVOW, the first training-free system that
+                reconstructs instance-level, simulation-ready 4D mesh scenes from a single
+                monocular video. Recent 4D reconstruction achieves impressive rendering
+                quality, but its outputs (e.g., implicit fields, Gaussian primitives, or point
+                clouds) lack the watertight topology, instance separation, and standardized physical interfaces required by physics simulators and embodied
+                AI. OVOW closes this gap with a four-stage pipeline: a vision-language
+                model discovers, labels, and motion-classifies all instances; categoryaware reconstruction yields per-instance meshes for rigid objects and
+                topology-consistent mesh sequences for deformable ones; an iterative
+                render-match-optimize procedure recovers metric scale and 6-DoF pose
+                trajectories; and physics-grounded assembly enforces ground contact and
+                inter-object support. Crucially, we model all motion, rigid and non-rigid,
+                through direct vertex deformation without category-specific priors or
+                skeleton rigging, producing watertight mesh scenes ready for downstream
+                physics simulation and editing. We further establish the first benchmark
+                for structured Video-to-4D evaluation, with metrics for geometric correctness, instance separation, and physical plausibility beyond visual fidelity;
+                the same pipeline doubles as a scalable engine for synthesizing paired
+                video-to-4D simulation data for future 4D world models and embodied
+                AI. Across two synthetic benchmarks (static and 4D), OVOW attains the
+                best overall layout and geometry accuracy and the lowest photometric
+                and semantic error among all baselines, and on monocular video runs one
+                to two orders of magnitude faster than the baselines, while downstream
+                physics simulation confirms its physical stability </p>
+            <p class="pubothers"> European Conference on Computer Vision (ECCV), 2026 </p>
+            <div class="pubclick">
+                <a href="html/OVOW.html" class="pubbutton">[pdf]</a>
+                <a href="https://onevideooneworld.github.io/" class="pubbutton">[code]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/InceptionGS.png">
+        </div>
+        <div id="InceptionGS" class="pubtxt">
+            <h3 class="pubtitle"> InceptionGS: Generative Bootstrapping for Large-Scale Gaussian Splatting under Unstructured View Sampling </h3>
+            <p class="pubothers"> Tianheng Lu, Guangyu Wang, Ruqi Huang and Lu Fang </p>
+            <p class="pubabstract"><strong>Abstract:</strong> Achieving truly immersive large-scale scene digitization necessitates consistent and visually pleasing rendering across all possible
+                viewing perspectives. However, collecting multi-view images covering every fine detail of a large-scale scene is prohibitive due to scene complexity,
+                capture cost, negligence, or accessibility constraints. As a result, the sampled views tend to be highly unstructured – the majority of the scene
+                is well covered yet certain regions inevitably lack sufficient observations.
+                Existing reconstruction based methods are vulnerable to view scarcity
+                while generation based approaches suffer from generalization, controllability, and 3D consistency issues. To address this challenge, we propose
+                InceptionGS, which bootstraps Gaussian splatting by subtly balancing
+                reconstruction and generation. Starting from an initial Gaussian splatting, InceptionGS reasonably rethinks and repairs problematic regions
+                caused by view scarcity while preserving the quality elsewhere, by softly
+                incorporating scene- and view-adaptive generative priors. Extensive experiments on real-world large-scale scenes demonstrate the superiority
+                and broad applicability of our approach in handling unstructured imagery and boosting high-fidelity Gaussian splatting. </p>
+            <p class="pubothers"> European Conference on Computer Vision (ECCV), 2026 </p>
+            <div class="pubclick">
+                <a href="html/InceptionGS.html" class="pubbutton">[pdf]</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/DEFAR.png">
+        </div>
+        <div id="DEFAR" class="pubtxt">
+            <h3 class="pubtitle"> Exposure Bias Can Alleviate Itself via Directional and Frequency Rectification in Flow Matching </h3>
+            <p class="pubothers"> Guanbo Huang, Jingjia Mao, Fanding Huang, Fengkai Liu, Xiangyang Luo, Yaoyuan Liang, Jiasheng Lu, Xiaoe Wang, Pei Liu, Ruiliu Fu, Ruqi Huang and Shaolun Huang </p>
+            <p class="pubabstract"><strong>Abstract:</strong> Flow Matching (FM) has achieved remarkable generative
+                performance, yet it suffers from exposure bias due to discrepancies between training and inference. Existing mitigation strategies typically
+                rely on static constraints or external heuristics. In this work, we propose that exposure bias itself inherently contains dynamic signals that
+                can guide its own rectification. To leverage this, we introduce DEFAR
+                (DirEctional-Frequency Adaptive Rectification). This framework simulates the single-step inference process during training to identify exposure
+                bias. It utilizes the directional and frequency adaptive feedback signals
+                within bias itself to enhance the bias tolerance of the model. It consists
+                of two key components: (1) Anti-Drift Rectification (ADR). ADR
+                treats inference-time drift as a signal to learn the direction to steer deviated states back toward the target. ADR endows the model with intrinsic active self-rectification capabilities; (2) Frequency Compensation
+                (FC). Empirically, we observe that accumulated bias often stems from a
+                lack of low-frequency components in high-noise stages and exposure bias
+                carries the missing frequency information. FC leverages the bias itself as
+                a self-feedback weighting factor to reinforce the missing frequency components. Experiments on CIFAR-10, CelebA-64, and ImageNet-256/512
+                show that DEFAR outperforms prior baselines and further demonstrates
+                favorable scalability, compatibility, and inference robustness. Code will
+                be made available in https://github.com/wuliwuliy/DEFAR. </p>
+            <p class="pubothers"> European Conference on Computer Vision (ECCV), 2026 </p>
+            <div class="pubclick">
+                <a href="html/DEFAR.html" class="pubbutton">[pdf]</a>
+            </div>
+        </div>
+    </div>
+    
     <!-- # 20260524 -->
     <div class="pubdiv">
         <div class="pubimg">
