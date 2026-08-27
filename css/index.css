@@ -1,4 +1,6 @@
-body {font-family: Arial;}
+body {
+    font-family: Georgia, "Times New Roman", serif;
+}
 
 /* Style the tab */
 .tab {
@@ -12,6 +14,7 @@ body {font-family: Arial;}
 
 /* Style the buttons inside the tab */
 .tab button {
+    font-family: inherit;
     background-color: inherit;
     float: left;
     border: none;
@@ -47,6 +50,11 @@ body {font-family: Arial;}
 .infoimg{
     display: inline-block;
     padding: 20px 0px;
+}
+
+.position,
+.contact-email{
+    white-space: nowrap;
 }
 
 .infotxt{
@@ -121,9 +129,24 @@ body {font-family: Arial;}
 }
 
 .grouptxt{
-    display: inline-block;
+    display: block;
+    width: 100%;
     padding: 0 20px 0 20px;
     line-height: 25px;
+}
+
+.grouptxt > ul{
+    column-count: 2;
+    column-gap: 3.5rem;
+}
+
+.grouptxt > ul li{
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+}
+
+.alumni-master{
+    margin-top: 2em;
 }
 
 .newsdiv{
@@ -135,3 +158,8 @@ body {font-family: Arial;}
     line-height: 25px;
 }
 
+@media (max-width: 700px){
+    .grouptxt > ul{
+        column-count: 1;
+    }
+}

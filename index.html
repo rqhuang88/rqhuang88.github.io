@@ -16,12 +16,14 @@
         <div class="infoimg">
             <img src="img/info.png">
             <h2>Ruqi Huang</h2>
+            <p class="position">Tenure-track Associate Professor</p>
             <p><strong>Contact:</strong></p>
-            <p>ruqihuang AT sz.tsinghua.edu.cn</p>
+            <p class="contact-email">ruqihuang AT sz.tsinghua.edu.cn</p>
         </div>
         <div class="infotxt">
             <h3>Introduction</h3>
-            <p>I obtained my PhD degree under the supervision of Frederic Chazal from University of Paris-Saclay in 2016. Prior to that, I obtained my bachelor and master degree from Tsinghua University in 2011 and 2013, respectively. My research interests lie in 3D Computer Vision and Geometry Processing, with a strong focus on developing 3D reconstruction techniques for both static and dynamic scenes. In particular, I am interested in developing learning approaches towards 3D computer vision tasks without heavy dependency on supervision, via incorporating structural priors (especially the geometric ones) into neural networks. Beyond that, I am also interested in applying geometric/topological analysis on interdisciplinary data, e.g., biological, medical and high-dimensional imaging data. My full CV can be found here.</p>
+            <p>My research is driven by a long-term question: <em>how can visual observations help us understand change in the 3D world, from articulated objects to living systems?</em> Images and 3D measurements provide only partial snapshots. To make change analyzable, I study how to associate these observations into coherent states, identify compact structures that preserve what matters for motion, and ultimately build testable models of how those states evolve and respond to inputs.</p>
+            <p>This question has led my group to work on non-rigid shape correspondence and registration, geometry-aware learning for unstructured 3D data, and automatic rigging and motion representation for diverse 3D objects. We are also extending this perspective across scales through computational microscopy, where we recover neuronal locations and time-resolved activity from indirect measurements, together with collaborations in optical sensing and computing.</p>
             <div class="pubclick">
                 <a href="html/CV.html" class="pubbutton">[Full CV 127K]</a>
                 <a href="https://scholar.google.com/citations?hl=zh-CN&user=cgRY63gAAAAJ&view_op=list_works&sortby=pubdate" class="pubbutton">[Google Scholar]</a>
@@ -35,12 +37,23 @@
     <div class="newsdiv">
         <div class="newstxt">
             <ul>
-                <li><strong>2026-07:</strong> One paper was accepted by Nature Methods.</li>
+                <li>2026-08: <em>INSPIRE</em> was accepted by <strong>Nature Computational Science</strong>.</li>
+                <li>2026-08: <em>NFR</em> was accepted by <strong>Computer Graphics Forum</strong>.</li>
+                <li>2026-07: <em>DeepWonder3D</em> was accepted by <strong>Nature Methods</strong>.</li>
                 <!-- # 20260622 -->
-                <li><strong>2026-06:</strong> Four papers were accepted by ECCV 2026 and one paper was accepted by IROS 2026.</li>
+                <li>2026-06: <em>DANTE-W</em>, <em>OVOW</em>, <em>InceptionGS</em>, and <em>DEFAR</em> were accepted by <strong>ECCV 2026</strong>; <em>FILIC</em> was accepted by <strong>IROS 2026</strong>.</li>
                 <!-- # 20260524 -->
-                <li><strong>2026-05:</strong> One paper was accepted by RSS 2026.</li>
-                <!-- <li><strong>2026-05:</strong> One paper was accepted by ICML 2026.</li> -->
+                <li>2026-05: <em>GS-Playground</em> was accepted by <strong>RSS 2026</strong>.</li>
+                <li>2026-05: <em>OmniVideo-R1</em> was accepted by <strong>ICML 2026</strong>.</li>
+                <!-- # 20260223 -->
+                <li>2026-02: <em>ACSG</em>, <em>3DThinker</em>, and <em>LottieGPT</em> were accepted by <strong>CVPR 2026</strong>.</li>
+                <!-- # 20260202 -->
+                <li>2026-02: <em>DanceTogether!</em> was accepted by <strong>ICLR 2026</strong>; <em>SSM</em> was accepted by <strong>ICRA 2026</strong>.</li>
+                <!-- # 20250826 -->
+                <li>2025-11: <em>SIFThinker</em> was accepted by <strong>AAAI 2026</strong>; <em>TexGuided-GS2Mesh</em> was accepted by <strong>3DV 2026</strong>.</li>
+                <li>2025-09: <em>PIN</em> was accepted by <strong>Nature Computational Science</strong>.</li>
+                <!-- # 20250826 -->
+                <li>2025-08: <em>Combo</em> was accepted by <strong>TPAMI</strong>.</li>
             </ul>
         </div>
     </div>
@@ -966,21 +979,6 @@
     </div>
     <div class="pubdiv">
         <div class="pubimg">
-            <img width="200px" src="img/ONODE.png">
-        </div>
-        <div id="ONODE" class="pubtxt">
-            <h3 class="pubtitle">Optical Neural Ordinary Differential Equations</h3>
-            <p class="pubothers">Yun Zhao, Hang Chen, Min Lin, Haiou Zhang, Tao Yan, Xing Lin, Ruqi Huang, Qionghai Dai</p>
-            <p class="pubabstract"><strong>Abstract:</strong>  Increasing the layer number of on-chip photonic neural networks (PNNs) is essential to improve its model performance. However, the successively cascading of network hidden layers results in larger integrated photonic chip areas. To address this issue, we propose the optical neural ordinary differential equations (ON-ODE) architecture that parameterizes the continuous dynamics of hidden layers with optical ODE solvers. The ON-ODE comprises the PNNs followed by the photonic integrator and optical feedback loop, which can be configured to represent residual neural networks (ResNet) and recurrent neural networks with effectively reduced chip area occupancy. For the interference-based optoelectronic nonlinear hidden layer, the numerical experiments demonstrate that the single hidden layer ON-ODE can achieve approximately the same accuracy as the two-layer optical ResNet in image classification tasks. Besides, the ON-ODE improves the model classification accuracy for the diffraction-based all-optical linear hidden layer. The time-dependent dynamics property of ON-ODE is further applied for trajectory prediction with high accuracy.</p>
-            <p class="pubothers">Optics Letters, 2023</p>
-            <div class="pubclick">
-                <a href="html/ONODE.html" class="pubbutton">[pdf 1.0M]</a>
-                <a href="javascript:void(0)" onclick="redirectToPageB('ONODE')">[BibTex]</a>
-            </div>
-        </div>
-    </div>
-    <div class="pubdiv">
-        <div class="pubimg">
             <img width="200px" src="img/ElasticMVS.png">
         </div>
         <div id="ElasticMVS" class="pubtxt">
@@ -1202,37 +1200,51 @@
         <div class="grouptxt">
             <h3>PhD Students</h3>
             <ul>
-                <li>Jinzhi Zhang, 2022-2024</li>
-                <li>Yun Zhao, 2021-2025</li>
-                <li>Yanchen Guo, 2021-2025</li>
                 <li>Mingze Sun, 2022-now</li>
                 <li>Yujia Chen, 2022-now</li>
-                <li>Fengdi Zhang, 2022-now</li>
                 <li>Xinyu Jiang, 2023-now</li>
-                <li>Chen Guo, 2024-now</li>
-                <li>Puhua Jiang, 2021-2025</li>
-            </ul>
-            <h3>MPhil Students</h3>
-            <ul>
                 <li>Zhangquan Chen, 2023-now</li>
-                <li>Zhejia Cai, 2023-now</li>
+                <li>Haizhou Ge, 2023-now</li>
+                <li>Chen Guo, 2024-now</li>
+                <li>Zhixing Chen, 2024-now</li>
+            </ul>
+            <h3>Master Students</h3>
+            <ul>
                 <li>Xiaoyu Hu, 2023-now</li>
                 <li>Junhao Chen, 2024-now</li>
                 <li>Jingjia Mao, 2024-now</li>
                 <li>Cheng Zeng, 2024-now</li>
                 <li>Keyi Chen, 2024-now</li>
                 <li>Zijian Cheng, 2024-now</li>
-                <li>Kaisan Li, 2020-2023</li>
-                <li>Leyao Liu, 2020-2023</li>
-                <li>Xuechao Chen, 2020-2023</li>
-                <li>Zequn Chen, 2021-2024</li>
-                <li>Chen Guo, 2021-2024</li>
-                <li>Ting Zhang, 2021-2024</li>
-                <li>Yurun Chen, 2022-2025</li>
-                <li>Jin Wang, 2022-2025</li>
-                <li>Shiwei Mao, 2022-2025</li>
-                <li>Guochen Shao, 2022-2025</li>
-                <li>Yunqi Zhao, 2022-2025</li>
+                <li>Zhenyu Liu, 2025-now</li>
+                <li>Jiansong Pei, 2025-now</li>
+                <li>Jingdi Chen, 2025-now</li>
+                <li>Qiyang Zhou, 2025-now</li>
+                <li>Baoning Wang, 2025-now</li>
+                <li>Yinuo Wang, 2025-now</li>
+            </ul>
+            <h3>Alumni</h3>
+            <ul>
+                <li>Guangyu Wang, 2024-2026 (PhD)</li>
+                <li>Fengdi Zhang, 2022-2026 (PhD)</li>
+                <li>Yun Zhao, 2021-2025 (PhD)</li>
+                <li>Yanchen Guo, 2021-2025 (PhD)</li>
+                <li>Puhua Jiang, 2021-2025 (PhD)</li>
+                <li>Jinzhi Zhang, 2022-2024 (PhD)</li>
+            </ul>
+            <ul class="alumni-master">
+                <li>Zhejia Cai, 2023-2026 (Master)</li>
+                <li>Yurun Chen, 2022-2025 (Master)</li>
+                <li>Jin Wang, 2022-2025 (Master)</li>
+                <li>Shiwei Mao, 2022-2025 (Master)</li>
+                <li>Guochen Shao, 2022-2025 (Master)</li>
+                <li>Yunqi Zhao, 2022-2025 (Master)</li>
+                <li>Zequn Chen, 2021-2024 (Master)</li>
+                <li>Chen Guo, 2021-2024 (Master)</li>
+                <li>Ting Zhang, 2021-2024 (Master)</li>
+                <li>Kaisan Li, 2020-2023 (Master)</li>
+                <li>Leyao Liu, 2020-2023 (Master)</li>
+                <li>Xuechao Chen, 2020-2023 (Master)</li>
             </ul>
         </div>
     </div>
