@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ruqi Huang</title>
 </head>
 <body>
@@ -40,6 +41,7 @@
                 <li>2026-08: <em>INSPIRE</em> was accepted by <strong>Nature Computational Science</strong>.</li>
                 <li>2026-08: <em>NFR</em> was accepted by <strong>Computer Graphics Forum</strong>.</li>
                 <li>2026-07: <em>DeepWonder3D</em> was accepted by <strong>Nature Methods</strong>.</li>
+                <li>2026-07: <em>UniGarment</em> was accepted by <strong>ACM MM 2026</strong>.</li>
                 <!-- # 20260622 -->
                 <li>2026-06: <em>DANTE-W</em>, <em>OVOW</em>, <em>InceptionGS</em>, and <em>DEFAR</em> were accepted by <strong>ECCV 2026</strong>; <em>FILIC</em> was accepted by <strong>IROS 2026</strong>.</li>
                 <!-- # 20260524 -->
@@ -60,7 +62,68 @@
 </div>
 
 <div id="Publications" class="tabcontent">
-    <h2>Selected Publications</h2>
+    <div class="publication-tabs" role="tablist" aria-label="Publication view">
+        <button type="button" class="publication-tab active" role="tab" aria-selected="true" aria-controls="publication-list" data-publication-view="selected">Selected</button>
+        <button type="button" class="publication-tab" role="tab" aria-selected="false" aria-controls="publication-list" data-publication-view="publications">Publications</button>
+    </div>
+    <p id="publication-full-note" class="publication-full-note" hidden>
+        See the full list through <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=cgRY63gAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">[Google Scholar]</a>.
+    </p>
+    <div id="publication-list" role="tabpanel" aria-label="Publication list">
+    <!-- 20260907 -->
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/DeepWonder3D.png">
+        </div>
+        <div id="DeepWonder3D" class="pubtxt">
+            <h3 class="pubtitle"> Rapid robust high-fidelity 3D neuronal extraction from multiview calcium imaging datasets </h3>
+            <p class="pubothers"> Yujia Chen, Guoxun Zhang, Mingrui Wang, Yuanlong Zhang, Jingyu Xie, Zhifeng Zhao, Ruqi Huang, Jiamin Wu and Qionghai Dai </p>
+            <p class="pubabstract"><strong>Abstract:</strong> Recent developments in imaging facilitate large-scale three-dimensional (3D) neuronal recording. While the resulting large datasets shed light on population-level neural coding, extracting neuronal calcium dynamics from 3D volumes remains more challenging than from two-dimensional images due to noise and scattering. Here we present DeepWonder3D, a general end-to-end pipeline for rapid and robust 3D neuronal extraction with high fidelity. Instead of processing voxel by voxel, DeepWonder3D works on the multiview projections of 3D imaging data obtained either digitally or optically through specific point spread functions and is therefore applicable to diverse techniques, including point-scanning microscopy, light-field microscopy and two-photon synthetic aperture microscopy. Integrating denoising, resolution registration, background removal, neuronal extraction and multiview fusion into a unified pipeline tailored for large-scale high-resolution datasets contaminated by noise and scattering, DeepWonder3D outperforms state-of-the-art methods in 3D localization accuracy with a tenfold reduction in computational costs, validated by numerical simulations and a hybrid two-photon/light-field imaging system. With the RUSH3D mesoscope, DeepWonder3D achieves high-fidelity 3D calcium extraction of tens of thousands of neurons across the mouse cortex within hours. </p>
+            <p class="pubothers"> Nature Methods, 2026 </p>
+            <div class="pubclick">
+                <a href="https://www.nature.com/articles/s41592-026-03215-6" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/yujiachenjerry/Deepwonder3D" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('DeepWonder3D')">[BibTex]</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 20260908 -->
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/NFR.png">
+        </div>
+        <div id="NFR" class="pubtxt">
+            <h3 class="pubtitle"> NFR: Neural Feature-Guided Non-Rigid Shape Registration </h3>
+            <p class="pubothers"> Zhangquan Chen, Puhua Jiang, Mingze Sun and Ruqi Huang </p>
+            <p class="pubabstract"><strong>Abstract:</strong> In this paper, we propose a novel learning-based framework for 3D shape registration, which overcomes the challenges of significant non-rigid deformation and partiality undergoing among input shapes, and, remarkably, requires no correspondence annotation during training. Our key insight is to incorporate neural features learned by deep learning-based shape matching networks into an iterative, geometric shape registration pipeline. The advantage of our approach is two-fold: on one hand, neural features provide more accurate and semantically meaningful correspondence estimation than spatial features (e.g., coordinates), which is critical in the presence of large non-rigid deformations; on the other hand, the correspondences are dynamically updated according to the intermediate registrations and filtered by consistency prior, which prominently robustify the overall pipeline. Empirical results show that, with as few as dozens of training shapes of limited variability, our pipeline achieves state-of-the-art results on several benchmarks of non-rigid point cloud matching and partial shape matching across varying settings, but also delivers high-quality correspondences between unseen challenging shape pairs that undergo both significant extrinsic and intrinsic deformations, in which case neither traditional registration methods nor intrinsic methods work. Our code is available at https://github.com/rqhuang88/NFR. </p>
+            <p class="pubothers"> Computer Graphics Forum, 2026 </p>
+            <div class="pubclick">
+                <a href="https://onlinelibrary.wiley.com/doi/10.1111/cgf.70597" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/rqhuang88/NFR" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('NFR')">[BibTex]</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 202607 -->
+    <div class="pubdiv">
+        <div class="pubimg">
+            <img width="200px" src="img/UniGarment.png">
+        </div>
+        <div id="UniGarment" class="pubtxt">
+            <h3 class="pubtitle"> UniGarment: Topology-Guided Texture Normalization for Simulation-Ready Garment Digitization </h3>
+            <p class="pubothers"> Junhao Chen, Jing Kong, Mingjin Chen, Boran Zhang, Saining Zhang, Hao Zhao, Ruqi Huang, Fei Ma and Qi Tian </p>
+            <p class="pubabstract"><strong>Abstract:</strong> Recovering a simulation-ready 3D garment asset from a single in-the-wild photograph remains a long-standing challenge. Prior methods address topology estimation and texture normalization in isolation and without closed-loop quality control. We present UniGarment, a closed-loop framework that couples the two stages through vision-language verification: a topology stage predicts a GarmentCode sewing pattern, a critic checks panel-boundary alignment against the photograph, the verified pattern localizes which image regions are fabric, and a final critic judges the draped result and re-triggers whichever stage failed. The recovered sewing pattern is what makes the output editable and re-drapeable rather than a static mesh. We evaluate pattern accuracy against genuine ground truth by rendering GarmentCode specifications through the same cloth simulator used at inference, so every evaluation image carries the exact pattern it was produced from. On this 156-garment benchmark the system reaches Panel IoU 0.357 and Seam Accuracy 0.594, and on in-the-wild photographs all garments drape successfully. Our analysis isolates two concrete bottlenecks. Panel count is recovered exactly for only 17% of garments, and seam accuracy degrades from 0.723 to 0.478 as garment complexity grows. It also shows that closed-loop behaviour is governed less by architecture than by how discriminative the critic's score is, a dependency we make explicit. </p>
+            <p class="pubothers"> ACM International Conference on Multimedia (ACM MM), 2026 </p>
+            <div class="pubclick">
+                <a href="html/UniGarment.html" class="pubbutton">[PDF]</a>
+                <a href="https://yisuanwang.github.io/UniGarment" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('UniGarment')">[BibTex]</a>
+            </div>
+        </div>
+    </div>
+
     <!-- 20260706 -->
     <div class="pubdiv">
         <div class="pubimg">
@@ -83,8 +146,9 @@
                 and boosting relighting fidelity. Project page: dante-wild.github.io. </p>
             <p class="pubothers"> European Conference on Computer Vision (ECCV), 2026 </p>
             <div class="pubclick">
-                <a href="html/DANTE-W.html" class="pubbutton">[pdf]</a>
-                <a href="https://dante-wild.github.io/" class="pubbutton">[code]</a>
+                <a href="html/DANTE-W.html" class="pubbutton">[PDF]</a>
+                <a href="https://dante-wild.github.io/" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('DANTE-W')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -120,8 +184,9 @@
                 physics simulation confirms its physical stability </p>
             <p class="pubothers"> European Conference on Computer Vision (ECCV), 2026 </p>
             <div class="pubclick">
-                <a href="html/OVOW.html" class="pubbutton">[pdf]</a>
-                <a href="https://onevideooneworld.github.io/" class="pubbutton">[code]</a>
+                <a href="html/OVOW.html" class="pubbutton">[PDF]</a>
+                <a href="https://onevideooneworld.github.io/" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('OVOW')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -146,7 +211,8 @@
                 and broad applicability of our approach in handling unstructured imagery and boosting high-fidelity Gaussian splatting. </p>
             <p class="pubothers"> European Conference on Computer Vision (ECCV), 2026 </p>
             <div class="pubclick">
-                <a href="html/InceptionGS.html" class="pubbutton">[pdf]</a>
+                <a href="html/InceptionGS.html" class="pubbutton">[PDF]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('InceptionGS')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -157,7 +223,7 @@
         </div>
         <div id="DEFAR" class="pubtxt">
             <h3 class="pubtitle"> Exposure Bias Can Alleviate Itself via Directional and Frequency Rectification in Flow Matching </h3>
-            <p class="pubothers"> Guanbo Huang, Jingjia Mao, Fanding Huang, Fengkai Liu, Xiangyang Luo, Yaoyuan Liang, Jiasheng Lu, Xiaoe Wang, Pei Liu, Ruiliu Fu, Ruqi Huang and Shaolun Huang </p>
+            <p class="pubothers"> Guanbo Huang, Jingjia Mao, Fanding Huang, Fengkai Liu, Xiangyang Luo, Yaoyuan Liang, Jiasheng Lu, Xiaoe Wang, Pei Liu, Ruiliu Fu, Ruqi Huang and Shao-Lun Huang </p>
             <p class="pubabstract"><strong>Abstract:</strong> Flow Matching (FM) has achieved remarkable generative
                 performance, yet it suffers from exposure bias due to discrepancies between training and inference. Existing mitigation strategies typically
                 rely on static constraints or external heuristics. In this work, we propose that exposure bias itself inherently contains dynamic signals that
@@ -176,7 +242,8 @@
                 be made available in https://github.com/wuliwuliy/DEFAR. </p>
             <p class="pubothers"> European Conference on Computer Vision (ECCV), 2026 </p>
             <div class="pubclick">
-                <a href="html/DEFAR.html" class="pubbutton">[pdf]</a>
+                <a href="html/DEFAR.html" class="pubbutton">[PDF]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('DEFAR')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -212,8 +279,9 @@
                 and robust Sim2Real transfer for interactive rigid-body robot learning. </p>
             <p class="pubothers"> Robotics: Science and Systems (RSS), 2026 </p>
             <div class="pubclick">
-                <a href="html/GS-Playground.html" class="pubbutton">[pdf]</a>
-                <a href="https://gsplayground.github.io" class="pubbutton">[code]</a>
+                <a href="html/GS-Playground.html" class="pubbutton">[PDF]</a>
+                <a href="https://gsplayground.github.io" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('GS-Playground')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -238,7 +306,8 @@
                 generalization capabilities. </p>
             <p class="pubothers"> International Conference on Machine Learning (ICML), 2026 </p>
             <div class="pubclick">
-                <a href="html/OmniVideo-R1.html" class="pubbutton">[pdf]</a>
+                <a href="html/OmniVideo-R1.html" class="pubbutton">[PDF]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('OmniVideo-R1')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -264,7 +333,8 @@
                 also successfully fulfills two critical requirements from professional animators.</p>
             <p class="pubothers"> Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2026 </p>
             <div class="pubclick">
-                <a href="html/skeleton.html" class="pubbutton">[pdf]</a>
+                <a href="html/skeleton.html" class="pubbutton">[PDF]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('skeleton')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -290,8 +360,9 @@
                 multiple benchmarks show that 3DThinker consistently outperforms strong baselines and offers a new perspective toward unifying 3D representations into multimodal reasoning.</p>
             <p class="pubothers"> Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2026 </p>
             <div class="pubclick">
-                <a href="html/think3d.html" class="pubbutton">[pdf]</a>
-                <a href="https://github.com/zhangquanchen/3DThinker" class="pubbutton">[code]</a>
+                <a href="html/think3d.html" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/zhangquanchen/3DThinker" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('think3d')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -301,7 +372,7 @@
         </div>
         <div id="lottiegpt" class="pubtxt">
             <h3 class="pubtitle">LottieGPT: Tokenizing Vector Animation for Autoregressive Generation</h3>
-            <p class="pubothers">Junhao Chen, Kejun Gao, Yuehan Cui, Mingze Sun, Mingjin Chen, Shaohui Wang, Xiaoxiao Long, Fei Ma, Qi Tian, Ruqi Huang, Hao Zhao</p>
+            <p class="pubothers">Junhao Chen, Kejun Gao, Yuehan Cui, Mingze Sun, Mingjin Chen, Shaohui Wang, Xiaoxiao Long, Fei Ma, Qi Tian, Hao Zhao, Ruqi Huang</p>
             <p class="pubabstract"><strong>Abstract:</strong> Despite rapid progress in video generation, existing
                 models are incapable of producing vector animation, a
                 dominant and highly expressive form of multimedia on the
@@ -323,8 +394,9 @@
                 previous state-of-the-art models on SVG generation (a special case of single-frame vector animation).</p>
             <p class="pubothers"> Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2026 </p>
             <div class="pubclick">
-                <a href="html/lottiegpt.html" class="pubbutton">[pdf]</a>
-                <a href="https://lottiegpt.github.io/" class="pubbutton">[code]</a>
+                <a href="html/lottiegpt.html" class="pubbutton">[PDF]</a>
+                <a href="https://lottiegpt.github.io/" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('lottiegpt')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -335,13 +407,14 @@
             <img width="200px" src="img/dancetog.png">
         </div>
         <div id="dancetog" class="pubtxt">
-            <h3 class="pubtitle">DanceTogether! Identity-Preserving Multi-Person Interactive Video Generation</h3>
+            <h3 class="pubtitle">Dance Together: Generating Interactive Multi-Person Video without Identity Drifting</h3>
             <p class="pubothers">Junhao Chen, Mingjin Chen, Jianjin Xu, Xiang Li, Junting Dong, Mingze Sun, Puhua Jiang, Hongxiang Li, Yuhang Yang, Hao Zhao, Xiaoxiao Long, Ruqi Huang </p>
             <p class="pubabstract"><strong>Abstract:</strong> Controllable video generation (CVG) has advanced rapidly, yet current systems falter when more than one actor must move, interact, and exchange positions under noisy control signals. We address this gap with DanceTogether, the first end-to-end diffusion framework that turns a single reference image plus independent pose–mask streams into long, photorealistic videos while strictly preserving every identity.</p>
             <p class="pubothers"> Proc. International Conference on Learning Representations(ICLR), 2026 </p>
             <div class="pubclick">
-                <a href="html/dancetog.html" class="pubbutton">[pdf]</a>
-                <a href="https://dancetog.github.io/" class="pubbutton">[code]</a>
+                <a href="html/dancetog.html" class="pubbutton">[PDF]</a>
+                <a href="https://dancetog.github.io/" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('dancetog')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -368,8 +441,9 @@
                     a visual Chain-of-Thought module to explicitly reason about</p>
             <p class="pubothers"> IEEE International Conference on Robotics and Automation (ICRA), 2026</p>
             <div class="pubclick">
-                <a href="html/SSM.html" class="pubbutton">[pdf]</a>
-                <!-- <a href="https://github.com/zhangquanchen/SIFThinker" class="pubbutton">[code]</a> -->
+                <a href="html/SSM.html" class="pubbutton">[PDF]</a>
+                <!-- <a href="https://github.com/zhangquanchen/SIFThinker" class="pubbutton">[Resource]</a> -->
+                <a href="javascript:void(0)" onclick="redirectToPageB('SSM')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -385,8 +459,9 @@
             <p class="pubabstract"><strong>Abstract:</strong> Current multimodal large language models (MLLMs) still face significant challenges in complex visual tasks (e.g., spatial understanding, fine-grained perception). Prior methods have tried to incorporate visual reasoning, however, they fail to leverage attention correction with spatial cues to iteratively refine their focus on prompt-relevant regions. In this paper, we introduce SIFThinker, a spatially-aware "think-with-images" framework that mimics human visual perception. Specifically, SIFThinker enables attention correcting and image region focusing by interleaving depth-enhanced bounding boxes and natural language. Our contributions are twofold: First, we introduce a reverse-expansion-forward-inference strategy that facilitates the generation of interleaved image-text chains of thought for process-level supervision, which in turn leads to the construction of the SIF-50K dataset. Besides, we propose GRPO-SIF, a reinforced training paradigm that integrates depth-informed visual grounding into a unified reasoning pipeline, teaching the model to dynamically correct and focus on prompt-relevant regions. Extensive experiments demonstrate that SIFThinker outperforms state-of-the-art methods in spatial understanding and fine-grained visual perception, while maintaining strong general capabilities, highlighting the effectiveness of our method.</p>
             <p class="pubothers"> Association for the Advancement of Artificial Intelligence (AAAI), 2026</p>
             <div class="pubclick">
-                <a href="html/SIFThinker.html" class="pubbutton">[pdf]</a>
-                <a href="https://github.com/zhangquanchen/SIFThinker" class="pubbutton">[code]</a>
+                <a href="html/SIFThinker.html" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/zhangquanchen/SIFThinker" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('SIFThinker')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -402,8 +477,9 @@
             <p class="pubabstract"><strong>Abstract:</strong> Reconstructing real-world objects from multi-view images is essential for applications in 3D editing, AR/VR, and digital content creation. Existing methods typically prioritize either geometric accuracy (Multi-View Stereo) or photorealistic rendering (Novel View Synthesis), often decoupling geometry and appearance optimization, which hinders downstream editing tasks. This paper advocates an unified treatment on geometry and appearance optimization for seamless Gaussian-mesh joint optimization. More specifically, we propose a novel framework that simultaneously optimizes mesh geometry (vertex positions and faces) and vertex colors via Gaussian-guided mesh differentiable rendering, leveraging photometric consistency from input images and geometric regularization from normal and depth maps. The obtained high-quality 3D reconstruction can be further exploit in down-stream editing tasks, such as relighting and shape deformation. The code will be publicly available upon acceptance.</p>
             <p class="pubothers">International Conference on 3D Vision (3DV), 2026</p>
             <div class="pubclick">
-                <a href="html/GaussianMesh.html" class="pubbutton">[pdf]</a>
-                <a href="https://github.com/zhejia01/TexGuided-GS2Mesh" class="pubbutton">[code]</a>
+                <a href="html/GaussianMesh.html" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/zhejia01/TexGuided-GS2Mesh" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('GaussianMesh')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -419,7 +495,7 @@
             <p class="pubabstract"><strong>Abstract:</strong> The field of photonic neural networks has experienced substantial growth, driven by its potential to enable ultrafast artificial intelligence inference and address the escalating demand for computing speed and energy efficiency. However, realizing nonlinearity-complete all-optical neurons is still challenging, constraining the performance of photonic neural networks. Here we report a complete photonic integrated neuron (PIN) with spatiotemporal feature learning capabilities and reconfigurable structures for nonlinear all-optical computing. By interleaving the spatiotemporal dimension of photons and leveraging the Kerr effect, PIN performs high-order temporal convolution and all-optical nonlinear activation monolithically on a silicon-nitride photonic chip, achieving neuron completeness of weighted interconnects and nonlinearities. We develop the PIN chip system and demonstrate its remarkable performance in high-accuracy image classification and human motion generation. PIN enables ultrafast spatialtemporal processing with a latency as low as 240 ps, paving the way for advancing machine intelligence into the subnanosecond regime.</p>
             <p class="pubothers">Nature Computational Science, 2025</p>
             <div class="pubclick">
-                <a href="https://www.nature.com/articles/s43588-025-00866-x" class="pubbutton">[pdf]</a>
+                <a href="https://www.nature.com/articles/s43588-025-00866-x" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('PIN')">[BibTex]</a>
             </div>
         </div>
@@ -436,7 +512,7 @@
             <p class="pubabstract"><strong>Abstract:</strong> In this paper, we propose a novel framework, Combo, for harmonious co-speech holistic 3D human motion generation and efficient customizable adaption. In particular, we identify that one fundamental challenge as the multiple-input-multiple-output (MIMO) nature of the generative model of interest. More concretely, on the input end, the model typically consumes both speech signals and character guidance (e.g., identity and emotion), which hinders further adaptation to varying guidance; on the output end, holistic human motions mainly consist of facial expressions and body movements, which are inherently correlated but non-trivial to coordinate in current data-driven generation process. In response to the above challenge, we propose tailored designs to both ends. For the former, we propose to pre-train on data regarding a fixed identity with neutral emotion, and defer the incorporation of customizable conditions (identity and emotion) to fine-tuning stage, which is boosted by our novel X-Adapter for parameter-efficient fine-tuning. For the latter, we propose a simple yet effective transformer design, DU-Trans, which first divides into two branches to learn individual features of face expression and body movements, and then unites those to learn a joint bi-directional distribution and directly predicts combined coefficients. Evaluated on BEAT2 and SHOW datasets, Combo is highly effective in generating high-quality motions but also efficient in transferring identity and emotion. Project website: Combo</p>
             <p class="pubothers">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2025</p>
             <div class="pubclick">
-                <a href="https://arxiv.org/pdf/2408.09397" class="pubbutton">[pdf]</a>
+                <a href="https://arxiv.org/pdf/2408.09397" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('Combo')">[BibTex]</a>
             </div>
         </div>
@@ -453,7 +529,7 @@
             <p class="pubabstract"><strong>Abstract:</strong> Recent advancements in large-scale generative models have significantly improved the quality and diversity of 3D shape generation. However, most existing methods focus primarily on generating static 3D models, overlooking the potentially dynamic nature of certain shapes, such as humanoids, animals, and insects. To address this gap, we focus on rigging, a fundamental task in animation that establishes skeletal structures and skinning for 3D models. In this paper, we introduce OmniRig, the first large-scale rigging dataset, comprising 79,499 meshes with detailed skeleton and skinning information. Unlike traditional benchmarks that rely on predefined standard poses (e.g., A-pose, T-pose), our dataset embraces diverse shape categories, styles, and poses. Leveraging this rich dataset, we propose ARMO, a novel rigging framework that utilizes an autoregressive model to predict both joint positions and connectivity relationships in a unified manner. By treating the skeletal structure as a complete graph and discretizing it into tokens, we encode the joints using an auto-encoder to obtain a latent embedding and an autoregressive model to predict the tokens. A mesh-conditioned latent diffusion model is used to predict the latent embedding for conditional skeleton generation. Our method addresses the limitations of regression-based approaches, which often suffer from error accumulation and suboptimal connectivity estimation. Through extensive experiments on the OmniRig dataset, our approach achieves state-of-the-art performance in skeleton prediction, demonstrating improved generalization across diverse object categories. The code and dataset will be made public for academic use upon acceptance.</p>
             <p class="pubothers">Proc. International Conference on Computer Vision(ICCV), 2025</p>
             <div class="pubclick">
-                <a href="https://arxiv.org/abs/2503.20663" class="pubbutton">[pdf]</a>
+                <a href="https://arxiv.org/abs/2503.20663" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('ARMO')">[BibTex]</a>
             </div>
         </div>
@@ -464,12 +540,13 @@
         </div>
         <div id="DISCOVERSE" class="pubtxt">
             <h3 class="pubtitle">DISCOVERSE: Efficient Robot Simulation in Complex High-Fidelity Environments</h3>
-            <p class="pubothers">Yufei Jia, Guangyu Wang,Yuhang Dong, Junzhe Wu, Yupei Zeng, Haonan Lin, Zifan Wang, Haizhou Ge, Weibin Gu, Kairui Ding, Zike Yan, Yunjie Cheng, Yue Li, Ziming Wang, Chuxuan Li, Wei Sui, Lu Shi, Guanzhong Tian, Ruqi Huang and Guyue Zhou</p>
+            <p class="pubothers">Yufei Jia, Guangyu Wang, Yuhang Dong, Junzhe Wu, Yupei Zeng, Haonan Lin, Zifan Wang, Haizhou Ge, Weibin Gu, Kairui Ding, Zike Yan, Yunjie Cheng, Yue Li, Ziming Wang, Chuxuan Li, Wei Sui, Lu Shi, Guanzhong Tian, Ruqi Huang and Guyue Zhou</p>
             <p class="pubabstract"><strong>Abstract:</strong> We present DISCOVERSE, the first unified, modular, open-source 3DGS-based simulation framework for Real2Sim2Real robot learning. It features a holistic Real2Sim pipeline that synthesizes hyper-realistic geometry and appearance of complex real-world scenarios, paving the way for analyzing and bridging the Sim2Real gap. Powered by Gaussian Splatting and MuJoCo, DISCOVERSE enables massively parallel simulation of multiple sensor modalities and accurate physics, with inclusive supports for existing 3D assets, robot models, and ROS plugins, empowering large-scale robot learning and complex robotic benchmarks. Through extensive experiments on imitation learning, DISCOVERSE demonstrates state-of-the-art zero-shot Sim2Real transfer performance compared to existing simulators. For code and demos: https://airdiscoverse.github.io/.</p>
             <p class="pubothers">Proc. IEEE International Conference on Intelligent Robots and Systems (IROS), 2025</p>
             <div class="pubclick">
-                <a href="html/DISCOVERSE.html" class="pubbutton">[pdf 3.6M]</a>
-                <a href="https://air-discoverse.github.io/" class="pubbutton">[webset]</a>
+                <a href="html/DISCOVERSE.html" class="pubbutton">[PDF]</a>
+                <a href="https://air-discoverse.github.io/" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('DISCOVERSE')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -484,7 +561,7 @@
             <p class="pubabstract"><strong>Abstract:</strong> Engaging with nature significantly enhances well-being, yet millions of individuals with blindness and low vision (BLV) are often excluded from these benefits due to constrained environmental perception. Here, we introduce VIPTour, an AI-driven system powered by the FocusFormer algorithm, which transforms complex scenes into structured, personalized graphs using tailored attention mechanisms and a BLV-in-the-Loop Adapter. Through intuitive, user-centered interaction, VIPTour facilitates active exploration and in-depth comprehension during dynamic sightseeing, while enabling accurate, long-lasting recollection and effective communication among BLV individuals post-journey. Extensive experiments demonstrate that VIPTour significantly enhances positive emotions and memory retention, with a 67.9% increase in positive emotional response, a 94.7% rise in arousal, a 772.73% improvement in cognitive mapping accuracy, and a 200% enhancement in long-term memory accuracy. These results underscore VIPTour’s ability to deliver an unparalleled, enjoyable, and memorable experience, promising profound benefits for the BLV community.</p>
             <p class="pubothers">npj Artificial Intelligence, 2025</p>
             <div class="pubclick">
-                <a href="https://www.nature.com/articles/s44387-025-00006-w" class="pubbutton">[pdf]</a>
+                <a href="https://www.nature.com/articles/s44387-025-00006-w" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('VIPTour')">[BibTex]</a>
             </div>
         </div>
@@ -499,7 +576,7 @@
             <p class="pubabstract"><strong>Abstract:</strong> Mapping air pollution at high spatial resolution is essential for understanding, managing, and mitigating the adverse impacts of air pollution. Current air pollution monitoring approaches suffer from limited spatial coverage and resolution. Artificial intelligence holds great promise for tackling these challenges, yet its application in air pollution monitoring remains nascent, facing limited transferability regarding low-quality labeled and non-uniform spread data. Here, we introduce Height-Field Signed Distance Function (HF-SDF), an innovative 3D implicit representation, to reconstruct air pollution concentration maps from coarse, incomplete data, which achieves both extensive spatial coverage and fine-scale results with powerful transferability. HF-SDF learns a continuous and transferable mapping model that integrates an auto-decoder network with a geometric constraint, offering flexible resolution. The evaluation uses reanalysis data and satellite observations, reaching accuracy rates of 96% and 91%, respectively. HF-SDF reveals immense promise in advancing air pollution monitoring by offering insights into the spatial heterogeneity of pollution distributions.</p>
             <p class="pubothers">npj Climate and Atmospheric Science, 2025</p>
             <div class="pubclick">
-                <a href="https://www.nature.com/articles/s41612-025-01044-6?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20250513&utm_content=10.1038/s41612-025-01044-6" class="pubbutton">[pdf]</a>
+                <a href="https://www.nature.com/articles/s41612-025-01044-6?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20250513&utm_content=10.1038/s41612-025-01044-6" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('Adaptive')">[BibTex]</a>
             </div>
         </div>
@@ -514,9 +591,9 @@
             <p class="pubabstract"><strong>Abstract:</strong> Recent advances in generative models have enabled high-quality 3D character reconstruction from multi-modal. However, animating these generated characters remains a challenging task, especially for complex elements like garments and hair, due to the lack of large-scale datasets and effective rigging methods. To address this gap, we curate AnimeRig, a large-scale dataset with detailed skeleton and skinning annotations. Building upon this, we propose DRiVE, a novel framework for generating and rigging 3D human characters with intricate structures. Unlike existing methods, DRiVE utilizes a 3D Gaussian representation, facilitating efficient animation and high-quality rendering. We further introduce GSDiff, a 3D Gaussian-based diffusion module that predicts joint positions as spatial distributions, overcoming the limitations of regression-based approaches. Extensive experiments demonstrate that DRiVE achieves precise rigging results, enabling realistic dynamics for clothing and hair, and surpassing previous methods in both quality and versatility. The code and dataset will be made public for academic use upon acceptance.</p>
             <p class="pubothers">Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025</p>
             <div class="pubclick">
-                <a href="html/DRiVE.html" class="pubbutton">[pdf 1.5M]</a>
-                <a href="https://driveavatar.github.io/" class="pubbutton">[webset]</a>
-<!--                <a href="javascript:void(0)" onclick="redirectToPageB('DRiVE')">[BibTex]</a>-->
+                <a href="html/DRiVE.html" class="pubbutton">[PDF]</a>
+                <a href="https://driveavatar.github.io/" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('DRiVE')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -530,10 +607,9 @@
             <p class="pubabstract"><strong>Abstract:</strong> In this paper, we present DV-Matcher, a novel learning-based framework for estimating dense correspondences between non-rigidly deformable point clouds. Learning directly from unstructured point clouds without meshing or manual labelling, our framework delivers high-quality dense correspondences, which is of significant practical utility in point cloud processing. Our key contributions are two-fold: First, we propose a scheme to inject prior knowledge from pre-trained vision models into geometric feature learning, which effectively complements the local nature of geometric features with global and semantic information; Second, we propose a novel deformation-based module to promote the extrinsic alignment induced by the learned correspondences, which effectively enhances the feature learning. Experimental results show that our method achieves state-of-the-art results in matching non-rigid point clouds in both near-isometric and heterogeneous shape collection as well as more realistic partial and noisy data.</p>
             <p class="pubothers">Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2025</p>
             <div class="pubclick">
-                <a href="html/DV-Matcher.html" class="pubbutton">[pdf 3.4M]</a>
-                <a href="https://github.com/rqhuang88/DV-Matcher" class="pubbutton">[code]</a>
-                <a href="https://drive.google.com/drive/folders/1CK9qihI2yyxkuXsxSHqzTRhLdTk8qghn" class="pubbutton">[dataset]</a>
-<!--                <a href="javascript:void(0)" onclick="redirectToPageB('DV-Matcher')">[BibTex]</a>-->
+                <a href="html/DV-Matcher.html" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/rqhuang88/DV-Matcher" class="pubbutton">[Resource]</a>
+                <a href="javascript:void(0)" onclick="redirectToPageB('DV-Matcher')">[BibTex]</a>
             </div>
         </div>
     </div>
@@ -567,7 +643,7 @@
                 diffractive networks, so as to further promote the development of computing metasystems.</p>
             <p class="pubothers">Nanophotonics</p>
             <div class="pubclick">
-                <a href="https://www.degruyter.com/document/doi/10.1515/nanoph-2024-0504/html" class="pubbutton">[pdf 4.2M]</a>
+                <a href="https://www.degruyter.com/document/doi/10.1515/nanoph-2024-0504/html" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('EMNN')">[BibTex]</a>
             </div>
         </div>
@@ -591,7 +667,7 @@
                 for research purposes upon acceptance. </p>
             <p class="pubothers">International Journal of Computer Vision, 2024</p>
             <div class="pubclick">
-                <a href="html/BeyondTalking.html" class="pubbutton">[pdf 2.1M]</a>
+                <a href="html/BeyondTalking.html" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('BeyondTalking')">[BibTex]</a>
             </div>
         </div>
@@ -615,8 +691,8 @@
                 shape pairs, but also delivers smooth, semantically meaningful interpolation in between. Empirical evidences justify the effectiveness and superiority of our method as well as specific design choices. </p>
             <p class="pubothers">Proc. SIGGRAPH Asia, 2024</p>
             <div class="pubclick">
-                <a href="html/SRIF.html" class="pubbutton">[pdf 3.2M]</a>
-                <a href="https://github.com/rqhuang88/SRIF" class="pubbutton">[code]</a>
+                <a href="html/SRIF.html" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/rqhuang88/SRIF" class="pubbutton">[Resource]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('SRIF')">[BibTex]</a>
             </div>
         </div>
@@ -640,7 +716,7 @@
                 AEPE on the SHOF benchmark, respectively.</p>
             <p class="pubothers">Proc. Pacific Graphics, 2024</p>
             <div class="pubclick">
-                <a href="html/EHOF.html" class="pubbutton">[pdf 7.7M]</a>
+                <a href="html/EHOF.html" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('EHOF')">[BibTex]</a>
             </div>
         </div>
@@ -655,7 +731,7 @@
             <p class="pubabstract"><strong>Abstract:</strong> Three-dimensional (3D) perception is vital to drive mobile robotics’ progress toward intelligence. However, state-of-the-art 3D perception solutions require complicated postprocessing or point-by-point scanning, suffering computational burden, latency of tens of milliseconds, and additional power consumption. Here, we propose a parallel all-optical computational chipset 3D perception architecture (Aop3D) with nanowatt power and light speed. The 3D perception is executed during the light propagation over the passive chipset, and the captured light intensity distribution provides a direct reflection of the depth map, eliminating the need for extensive postprocessing. The prototype system of Aop3D is tested in various scenarios and deployed to a mobile robot, demonstrating unprecedented performance in distance detection and obstacle avoidance. Moreover, Aop3D works at a frame rate of 600 hertz and a power consumption of 33.3 nanowatts per meta-pixel experimentally. Our work is promising toward next-generation direct 3D perception techniques with light speed and high energy efficiency.</p>
             <p class="pubothers">Science Advances, 2024</p>
             <div class="pubclick">
-                <a href="https://www.science.org/doi/abs/10.1126/sciadv.adn2031" class="pubbutton">[pdf]</a>
+                <a href="https://www.science.org/doi/abs/10.1126/sciadv.adn2031" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('Nanowatt')">[BibTex]</a>
             </div>
         </div>
@@ -688,7 +764,7 @@
                 state-of-the-art on the challenging GigaNVS benchmark.</p>
             <p class="pubothers">Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024</p>
             <div class="pubclick">
-                <a href="html/XScale-NVS.html" class="pubbutton">[pdf 8.9M]</a>
+                <a href="html/XScale-NVS.html" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('XScale-NVS')">[BibTex]</a>
             </div>
         </div>
@@ -725,7 +801,7 @@
                 flexible interaction for omniversal 3D segmentation.</p>
             <p class="pubothers">Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024</p>
             <div class="pubclick">
-                <a href="html/OmniSeg3D.html" class="pubbutton">[pdf 9.0M]</a>
+                <a href="html/OmniSeg3D.html" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('OmniSeg3D')">[BibTex]</a>
             </div>
         </div>
@@ -740,7 +816,7 @@
 <!--            <p class="pubabstract"><strong>Abstract:</strong> In histopathology, doctors identify diseases by characterizing abnormal cells and their spatial organization within tissues. Polarization microscopy and supervised learning have been proved as an effective tool for extracting polarization parameters to highlight pathological features. Here, we present an alternative approach based on unsupervised learning to group polarization-pixels into clusters, which correspond to distinct pathological structures. For pathological samples from different patients, it is confirmed that such unsupervised learning technique can decompose the histological structures into a stable basis of characteristic microstructural clusters, some of which correspond to distinctive pathological features for clinical diagnosis. Using hepatocellular carcinoma (HCC) and intrahepatic cholangiocarcinoma (ICC) samples, we demonstrate how the proposed framework can be utilized for segmentation of histological image, visualization of microstructure composition associated with lesion, and identification of polarization-based microstructure markers that correlates with specific pathology variation. This technique is capable of unraveling invisible microstructures in non-polarization images, and turn them into visible polarization features to pathologists and researchers.</p>-->
 <!--            <p class="pubothers">Proc. Communications Engineering, 2023</p>-->
 <!--            <div class="pubclick">-->
-<!--                <a href="html/ULPCMM.html" class="pubbutton">[pdf 3.2M]</a>-->
+<!--                <a href="html/ULPCMM.html" class="pubbutton">[PDF]</a>-->
 <!--                <a href="javascript:void(0)" onclick="redirectToPageB('ULPCMM')">[BibTex]</a>-->
 <!--            </div>-->
 <!--        </div>-->
@@ -775,8 +851,8 @@
                 work.</p>
             <p class="pubothers">Proc. 37th Conference on Neural Information Processing Systems (NeurIPS 2023)</p>
             <div class="pubclick">
-                <a href="html/DFR.html" class="pubbutton">[pdf 9.9M]</a>
-                <a href="https://github.com/rqhuang88/DFR" class="pubbutton">[code]</a>
+                <a href="html/DFR.html" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/rqhuang88/DFR" class="pubbutton">[Resource]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('DFR')">[BibTex]</a>
             </div>
 <!--            &lt;!&ndash;悬浮窗口&ndash;&gt;-->
@@ -823,7 +899,7 @@
                 benchmarks.</p>
             <p class="pubothers">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2023</p>
             <div class="pubclick">
-                <a href="html/GiganticNVS.html" class="pubbutton">[pdf 2.4M]</a>
+                <a href="html/GiganticNVS.html" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('GiganticNVS')">[BibTex]</a>
             </div>
         </div>
@@ -858,9 +934,8 @@
                 datasets.</p>
             <p class="pubothers">Proc. International Conference on Computer Vision (ICCV), 2023</p>
             <div class="pubclick">
-                <a href="html/SSCDFMAP.html" class="pubbutton">[pdf 16.6M]</a>
-                <a href="https://github.com/rqhuang88/Spatially-and-Spectrally-Consistent-Deep-Functional-Maps" class="pubbutton">[code]</a>
-                <a href="html/SSCDFMAP_poster.html" class="pubbutton">[poster 9.2M]</a>
+                <a href="html/SSCDFMAP.html" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/rqhuang88/Spatially-and-Spectrally-Consistent-Deep-Functional-Maps" class="pubbutton">[Resource]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('SSCDFMAP')">[BibTex]</a>
             </div>
         </div>
@@ -897,7 +972,7 @@
                 the community to explore beyond our solution.</p>
             <p class="pubothers">Proc. International Conference on Computer Vision (ICCV), 2023</p>
             <div class="pubclick">
-                <a href="html/RealGraph.html" class="pubbutton">[pdf 2.0M]</a>
+                <a href="html/RealGraph.html" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('RealGraph')">[BibTex]</a>
             </div>
         </div>
@@ -912,7 +987,7 @@
             <p class="pubabstract"><strong>Abstract:</strong> Anticipating others’ actions is innate and essential in order for humans to navigate and interact well with others in dense crowds. This ability is urgently required for unmanned systems such as service robots and self-driving cars. However, existing solutions struggle to predict pedestrian anticipation accurately, because the influence of group-related social behaviors has not been well considered. While group relationships and group interactions are ubiquitous and significantly influence pedestrian anticipation, their influence is diverse and subtle, making it difficult to explicitly quantify. Here, we propose the group interaction field (GIF), a novel group-aware representation that quantifies pedestrian anticipation into a probability field of pedestrians’ future locations and attention orientations. An end-to-end neural network, GIFNet, is tailored to estimate the GIF from explicit multidimensional observations. GIFNet quantifies the influence of group behaviors by formulating a group interaction graph with propagation and graph attention that is adaptive to the group size and dynamic interaction states. The experimental results show that the GIF effectively represents the change in pedestrians’ anticipation under the prominent impact of group behaviors and accurately predicts pedestrians’ future states. Moreover, the GIF contributes to explaining various predictions of pedestrians’ behavior in different social states. The proposed GIF will eventually be able to allow unmanned systems to work in a human-like manner and comply with social norms, thereby promoting harmonious human–machine relationships.</p>
             <p class="pubothers">Engineering, 2023</p>
             <div class="pubclick">
-                <a href="https://doi.org/10.1016/j.eng.2023.05.020" class="pubbutton">[pdf 3.6M]</a>
+                <a href="https://doi.org/10.1016/j.eng.2023.05.020" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('GIF')">[BibTex]</a>
             </div>
         </div>
@@ -939,7 +1014,7 @@
 <!--                and matching framework achieve real-time inference and high registration recall.</p>-->
 <!--            <p class="pubothers">Proc. CAAI International Conference on Artificial Intelligence(CICAI), 2023</p>-->
 <!--            <div class="pubclick">-->
-<!--                <a href="html/FastP2P.html" class="pubbutton">[pdf 0.48M]</a>-->
+<!--                <a href="html/FastP2P.html" class="pubbutton">[PDF]</a>-->
 <!--&lt;!&ndash;                <a href="javascript:void(0)" onclick="redirectToPageB('FastP2P')">[BibTex]</a>&ndash;&gt;-->
 <!--            </div>-->
 <!--        </div>-->
@@ -970,9 +1045,8 @@
                 and/or more structural geometric input.</p>
             <p class="pubothers">Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2023</p>
             <div class="pubclick">
-                <a href="html/NIE.html" class="pubbutton">[pdf 6.5M]</a>
-                <a href="https://github.com/TBSI2f/Neural-Intrinsic-Embedding" class="pubbutton">[code]</a>
-                <a href="html/NIE_poster.html" class="pubbutton">[poster 2.4M]</a>
+                <a href="html/NIE.html" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/TBSI2f/Neural-Intrinsic-Embedding" class="pubbutton">[Resource]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('NIE')">[BibTex]</a>
             </div>
         </div>
@@ -1007,7 +1081,7 @@
                 over both the supervised and self-supervised approaches.</p>
             <p class="pubothers">Proc. Conference on Neural Information Processing Systems (NeurIPS) (Spotlight), 2022</p>
             <div class="pubclick">
-                <a href="html/ElasticMVS.html" class="pubbutton">[pdf 6.5M]</a>
+                <a href="html/ElasticMVS.html" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('ElasticMVS')">[BibTex]</a>
             </div>
         </div>
@@ -1048,7 +1122,7 @@
                 great potential in compression, robustness, and efficiency.</p>
             <p class="pubothers">Proc. ACM International Conference on Multimedia, 2022</p>
             <div class="pubclick">
-                <a href="html/ParseMVS.html" class="pubbutton">[pdf 22.5M]</a>
+                <a href="html/ParseMVS.html" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('ParseMVS')">[BibTex]</a>
             </div>
         </div>
@@ -1076,8 +1150,8 @@
 <!--                upon the state-of-the-art methods.</p>-->
 <!--            <p class="pubothers">Proc. CAAI International Conference on Artificial Intelligence(Oral presentation), 2022</p>-->
 <!--            <div class="pubclick">-->
-<!--                <a href="html/CCDC.html" class="pubbutton">[pdf 9.2M]</a>-->
-<!--                <a href="https://github.com/IndigoPurple/CCDC" class="pubbutton">[code]</a>-->
+<!--                <a href="html/CCDC.html" class="pubbutton">[PDF]</a>-->
+<!--                <a href="https://github.com/IndigoPurple/CCDC" class="pubbutton">[Resource]</a>-->
 <!--                <a href="javascript:void(0)" onclick="redirectToPageB('CCDC')">[BibTex]</a>-->
 <!--            </div>-->
 <!--        </div>-->
@@ -1092,7 +1166,7 @@
 <!--            <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we consider the problem of reference-based video super-resolution(RefVSR), i.e., how to utilize a high-resolution (HR) reference frame to super-resolve a low-resolution (LR) video sequence. The existing approaches to RefVSR essentially attempt to align the reference and the input sequence, in the presence of resolution gap and long temporal range. However, they either ignore temporal structure within the input sequence, or suffer accumulative alignment errors. To address these issues, we propose EFENet to exploit simultaneously the visual cues contained in the HR reference and the temporal information contained in the LR sequence. EFENet first globally estimates cross-scale flow between the reference and each LR frame. Then our novel flow refinement module of EFENet refines the flow regarding the furthest frame using all the estimated flows, which leverages the global temporal information within the sequence and therefore effectively reduces the alignment errors. We provide comprehensive evaluations to validate the strengths of our approach, and to demonstrate that the proposed framework outperforms the state-of-the-art methods.</p>-->
 <!--            <p class="pubothers">Proc. CAAI International Conference on Artificial Intelligence, 2021</p>-->
 <!--            <div class="pubclick">-->
-<!--                <a href="html/EFENet.html" class="pubbutton">[pdf 3.0M]</a>-->
+<!--                <a href="html/EFENet.html" class="pubbutton">[PDF]</a>-->
 <!--                <a href="javascript:void(0)" onclick="redirectToPageB('EFENet')">[BibTex]</a>-->
 <!--            </div>-->
 <!--        </div>-->
@@ -1107,8 +1181,8 @@
             <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we propose a novel method, which we call CONSISTENT ZOOMOUT, for efficiently refining correspondences among deformable 3D shape collections, while promoting the resulting map consistency. Our formulation is closely related to a recent unidirectional spectral refinement framework, but naturally integrates map consistency constraints into the refinement. Beyond that, we show further that our formulation can be adapted to recover the underlying isometry among near-isometric shape collections with a theoretical guarantee, which is absent in the other spectral map synchronization frameworks. We demonstrate that our method improves the accuracy compared to the competing methods when synchronizing correspondences in both near-isometric and heterogeneous shape collections, but also significantly outperforms the baselines in terms of map consistency.</p>
             <p class="pubothers">Proc. Symposium on Geometry Processing, 2020</p>
             <div class="pubclick">
-                <a href="html/ConsistentZoomOut.html" class="pubbutton">[pdf 1.2M]</a>
-                <a href="https://github.com/ruqihuang/SGP2020_ConsistentZoomOut" class="pubbutton">[code]</a>
+                <a href="html/ConsistentZoomOut.html" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/ruqihuang/SGP2020_ConsistentZoomOut" class="pubbutton">[Resource]</a>
                 <a href="https://www.youtube.com/watch?v=WhduuY9o8QQ&t=24s" class="pubbutton">[video]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('ConsistentZoomOut')">[BibTex]</a>
             </div>
@@ -1124,8 +1198,8 @@
             <p class="pubabstract"><strong>Abstract:</strong>  This paper proposes a learning-based framework for reconstructing 3D shapes from functional operators, compactly encoded as small-sized matrices. To this end we introduce a novel neural architecture, called OperatorNet, which takes as input a set of linear operators representing a shape and produces its 3D embedding. We demonstrate that this approach significantly outperforms previous purely geometric methods for the same problem. Furthermore, we introduce a novel functional operator, which encodes the extrinsic or pose-dependent shape information, and thus complements purely intrinsic pose-oblivious operators, such as the classical Laplacian. Coupled with this novel operator, our reconstruction network achieves very high reconstruction accuracy, even in the presence of incomplete information about a shape, given a soft or functional map expressed in a reduced basis. Finally, we demonstrate that the multiplicative functional algebra enjoyed by these operators can be used to synthesize entirely new unseen shapes, in the context of shape interpolation and shape analogy applications.</p>
             <p class="pubothers">Proc. International Conference on Computer Vision(ICCV), 2019</p>
             <div class="pubclick">
-                <a href="html/OperatorNet.html" class="pubbutton">[pdf 13.1M]</a>
-                <a href="https://github.com/mrakotosaon/operatornet" class="pubbutton">[code]</a>
+                <a href="html/OperatorNet.html" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/mrakotosaon/operatornet" class="pubbutton">[Resource]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('OperatorNet')">[BibTex]</a>
             </div>
         </div>
@@ -1140,8 +1214,8 @@
             <p class="pubabstract"><strong>Abstract:</strong>  We propose a novel construction for extracting a central or limit shape in a shape collection, connected via a functional map network. Our approach is based on enriching the latent space induced by a functional map network with an additional natural metric structure. We call this shape-like dual object the limit shape and show that its construction avoids many of the biases introduced by selecting a fixed base shape or template. We also show that shape differences between real shapes and the limit shape can be computed and characterize the unique properties of each shape in a collection – leading to a compact and rich shape representation. We demonstrate the utility of this representation in a range of shape analysis tasks, including improving functional maps in difficult situations through the mediation of limit shapes, understanding and visualizing the variability within and across different shape classes, and several others. In this way, our analysis sheds light on the missing geometric structure in previously used latent functional spaces, demonstrates how these can be addressed and finally enables a compact and meaningful shape representation useful in a variety of practical applications.</p>
             <p class="pubothers">Proc. Symposium on Geometry Processing, 2019</p>
             <div class="pubclick">
-                <a href="html/LimitShape.html" class="pubbutton">[pdf 1.5M]</a>
-                <a href="https://github.com/ruqihuang/LimitShape" class="pubbutton">[code]</a>
+                <a href="html/LimitShape.html" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/ruqihuang/LimitShape" class="pubbutton">[Resource]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('LimitShape')">[BibTex]</a>
             </div>
         </div>
@@ -1156,8 +1230,8 @@
             <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we propose to consider the adjoint operators of functional maps, and demonstrate their utility in several tasks in geometry processing. Unlike a functional map, which represents a correspondence simply using the pull-back of function values, the adjoint operator reflects both the map and its distortion with respect to given inner products. We argue that this property of adjoint operators and especially their relation to the map inverse under the choice of different inner products, can be useful in applications including bi-directional shape matching, shape exploration, and pointwise map recovery among others. In particular, in this paper, we show that the adjoint operators can be used within the cycle-consistency framework to encode and reveal the presence or lack of consistency between distortions in a collection, in a way that is complementary to the previously used purely map-based consistency measures. We also show how the adjoint can be used for matching pairs of shapes, by accounting for maps in both directions, can help in recovering point-to-point maps from their functional counterparts, and describe how it can shed light on the role of functional basis selection.</p>
             <p class="pubothers">Proc. Symposium on Geometry Processing, 2017</p>
             <div class="pubclick">
-                <a href="html/AMRSAM.html" class="pubbutton">[pdf 18.6M]</a>
-                <a href="https://github.com/ruqihuang/AdjointFmaps" class="pubbutton">[code]</a>
+                <a href="html/AMRSAM.html" class="pubbutton">[PDF]</a>
+                <a href="https://github.com/ruqihuang/AdjointFmaps" class="pubbutton">[Resource]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('AMRSAM')">[BibTex]</a>
             </div>
         </div>
@@ -1172,7 +1246,7 @@
             <p class="pubabstract"><strong>Abstract:</strong>  In this paper, we provide stability guarantees for two frameworks that are based on the notion of functional maps – the shape difference operators and the framework which is used to analyze and visualize the deformations between shapes induced by a functional map. We consider two types of perturbations in our analysis: one is on the input shapes and the other is on the change in scale. In theory, we formulate and justify the robustness that has been observed in practical implementations of those frameworks. Inspired by our theoretical results, we propose a pipeline for constructing shape difference operators on point clouds and show numerically that the results are robust and informative. In particular, we show that both the shape difference operators and the derived areas of highest distortion are stable with respect to changes in shape representation and change of scale. Remarkably, this is in contrast with the well-known instability of the eigenfunctions of the Laplace-Beltrami operator computed on point clouds compared to those obtained on triangle meshes.</p>
             <p class="pubothers">Computer Graphics Forum, 2017</p>
             <div class="pubclick">
-                <a href="html/OSFMSDO.html" class="pubbutton">[pdf 18.5M]</a>
+                <a href="html/OSFMSDO.html" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('OSFMSDO')">[BibTex]</a>
             </div>
         </div>
@@ -1187,10 +1261,11 @@
             <p class="pubabstract"><strong>Abstract:</strong>  In many real-world applications data appear to be sampled around 1-dimensional filamentary structures that can be seen as topological metric graphs. In this paper we address the metric reconstruction problem of such filamentary structures from data sampled around them. We prove that they can be approximated, with respect to the Gromov-Hausdorff distance by well-chosen Reeb graphs (and some of their variants) and provide an efficient and easy to implement algorithm to compute such approximations in almost linear time. We illustrate the performances of our algorithm on a few data sets.</p>
             <p class="pubothers">Discrete Computational Geometry, 2015</p>
             <div class="pubclick">
-                <a href="html/GHAFSURTG.html" class="pubbutton">[pdf 3.0M]</a>
+                <a href="html/GHAFSURTG.html" class="pubbutton">[PDF]</a>
                 <a href="javascript:void(0)" onclick="redirectToPageB('GHAFSURTG')">[BibTex]</a>
             </div>
         </div>
+    </div>
     </div>
 </div>
 
@@ -1253,10 +1328,10 @@
 </body>
 
 <style>
-    @import "css/index.css";
+    @import "css/index.css?v=20260909";
 </style>
 
-<script src="js/index.js"></script>
+<script src="js/index.js?v=20260909"></script>
 
 <style>
     a {

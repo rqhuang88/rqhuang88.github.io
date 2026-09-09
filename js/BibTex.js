@@ -341,6 +341,157 @@ if (id === 'DFR') {
         '   doi = {10.1038/s43588-025-00866-x},\n' +
         '   year = {2025},\n' +
         '   }';
-}else {
+} else if (id === 'DeepWonder3D') {
+    contentParagraph.textContent = '@article{chen2026deepwonder3d,\n' +
+        '   title = {Rapid robust high-fidelity 3D neuronal extraction from multiview calcium imaging datasets},\n' +
+        '   author = {Chen, Yujia and Zhang, Guoxun and Wang, Mingrui and Zhang, Yuanlong and Xie, Jingyu and Zhao, Zhifeng and Huang, Ruqi and Wu, Jiamin and Dai, Qionghai},\n' +
+        '   journal = {Nature Methods},\n' +
+        '   year = {2026},\n' +
+        '   doi = {10.1038/s41592-026-03215-6},\n' +
+        '   url = {https://doi.org/10.1038/s41592-026-03215-6}\n' +
+        '   }';
+} else if (id === 'NFR') {
+    contentParagraph.textContent = '@article{chen2026nfr,\n' +
+        '   title = {NFR: Neural Feature-Guided Non-Rigid Shape Registration},\n' +
+        '   author = {Chen, Zhangquan and Jiang, Puhua and Sun, Mingze and Huang, Ruqi},\n' +
+        '   journal = {Computer Graphics Forum},\n' +
+        '   pages = {e70597},\n' +
+        '   year = {2026},\n' +
+        '   doi = {10.1111/cgf.70597},\n' +
+        '   url = {https://doi.org/10.1111/cgf.70597}\n' +
+        '   }';
+} else if (id === 'UniGarment') {
+    contentParagraph.textContent = '@inproceedings{chen2026unigarment,\n' +
+        '   title = {UniGarment: Topology-Guided Texture Normalization for Simulation-Ready Garment Digitization},\n' +
+        '   author = {Chen, Junhao and Kong, Jing and Chen, Mingjin and Zhang, Boran and Zhang, Saining and Zhao, Hao and Huang, Ruqi and Ma, Fei and Tian, Qi},\n' +
+        '   booktitle = {Proceedings of the 34th ACM International Conference on Multimedia},\n' +
+        '   year = {2026},\n' +
+        '   numpages = {10},\n' +
+        '   isbn = {979-8-4007-2213-4},\n' +
+        '   doi = {10.1145/3767308.3835607},\n' +
+        '   url = {https://doi.org/10.1145/3767308.3835607}\n' +
+        '   }';
+} else if (id === 'DANTE-W') {
+    contentParagraph.textContent = '@inproceedings{wang2026dantew,\n' +
+        '   title = {DANTE-W: Diffuse Albedo Neural Texturing in the Wild},\n' +
+        '   author = {Wang, Guangyu and Lu, Tianheng and Huang, Ruqi and Fang, Lu},\n' +
+        '   booktitle = {European Conference on Computer Vision},\n' +
+        '   year = {2026}\n' +
+        '   }';
+} else if (id === 'OVOW') {
+    contentParagraph.textContent = '@inproceedings{chen2026onevideo,\n' +
+        '   title = {One Video, One World: Turning Monocular Video into Physical 4D Scenes},\n' +
+        '   author = {Chen, Junhao and Zhang, Boran and Chen, Mingjin and Zhang, Henghaofan and Zhang, Saining and Zhu, Congcong and Zhao, Hao and Huang, Ruqi and Li, Zhihao and Wang, Yufei},\n' +
+        '   booktitle = {European Conference on Computer Vision},\n' +
+        '   year = {2026}\n' +
+        '   }';
+} else if (id === 'InceptionGS') {
+    contentParagraph.textContent = '@inproceedings{lu2026inceptiongs,\n' +
+        '   title = {InceptionGS: Generative Bootstrapping for Large-Scale Gaussian Splatting under Unstructured View Sampling},\n' +
+        '   author = {Lu, Tianheng and Wang, Guangyu and Huang, Ruqi and Fang, Lu},\n' +
+        '   booktitle = {European Conference on Computer Vision},\n' +
+        '   year = {2026}\n' +
+        '   }';
+} else if (id === 'DEFAR') {
+    contentParagraph.textContent = '@inproceedings{huang2026exposure,\n' +
+        '   title = {Exposure Bias Can Alleviate Itself via Directional and Frequency Rectification in Flow Matching},\n' +
+        '   author = {Huang, Guanbo and Mao, Jingjia and Huang, Fanding and Liu, Fengkai and Luo, Xiangyang and Liang, Yaoyuan and Lu, Jiasheng and Wang, Xiaoe and Liu, Pei and Fu, Ruiliu and Huang, Ruqi and Huang, Shao-Lun},\n' +
+        '   booktitle = {European Conference on Computer Vision},\n' +
+        '   year = {2026}\n' +
+        '   }';
+} else if (id === 'GS-Playground') {
+    contentParagraph.textContent = '@inproceedings{jia2026gsplayground,\n' +
+        '   title = {GS-Playground: A High-Throughput Photorealistic Simulator for Vision-Informed Robot Learning},\n' +
+        '   author = {Jia, Yufei and Zhang, Heng and Zhang, Ziheng and Wu, Junzhe and Yu, Mingrui and Wang, Zifan and Jiang, Dixuan and Li, Zheng and Cao, Chenyu and Yu, Zhuoyuan and Yang, Xun and Ge, Haizhou and Zhang, Yuchi and Zhang, Jiayuan and Huang, Zhenbiao and Liu, Tianle and Chen, Shenyu and Wang, Jiacheng and Xie, Bin and Yao, Xuran and Deng, Xiwa and Wang, Guangyu and Zhang, Jinzhi and Hao, Lei and Chen, Zhixing and Chen, Yuxiang and Wang, Anqi and Tian, Hongyun and Yan, Yiyi and Cao, Zhanxiang and Jiang, Yizhou and Shao, Hanyang and Li, Yue and Shi, Lu and Sui, Wei and Cui, Hanqing and Qin, Yusen and Huang, Ruqi and Chen, Bokui and Han, Lei and Wang, Tiancai and Zhou, Guyue},\n' +
+        '   booktitle = {Robotics: Science and Systems},\n' +
+        '   year = {2026}\n' +
+        '   }';
+} else if (id === 'OmniVideo-R1') {
+    contentParagraph.textContent = '@inproceedings{chen2026omnivideor1,\n' +
+        '   title = {OmniVideo-R1: Reinforcing Audio-visual Reasoning with Query Intention and Modality Attention},\n' +
+        '   author = {Chen, Zhangquan and Tao, Jiale and Li, Ruihuang and Hu, Yihao and Chen, Ruitao and Yang, Zhantao and Yu, Xinlei and Jing, Haodong and Zhang, Manyuan and Shao, Shuai and Wang, Biao and Lu, Qinglin and Huang, Ruqi},\n' +
+        '   booktitle = {Proceedings of the International Conference on Machine Learning},\n' +
+        '   year = {2026}\n' +
+        '   }';
+} else if (id === 'skeleton') {
+    contentParagraph.textContent = '@inproceedings{sun2026animator,\n' +
+        '   title = {Animator-Centric Skeleton Generation on Objects with Fine-Grained Details},\n' +
+        '   author = {Sun, Mingze and Zeng, Cheng and Pei, Jiansong and Chen, Junhao and Song, Chaoyue and Wang, Shaohui and Chang, Tianyuan and Huang, Bin and Zeng, Zijiao and Huang, Ruqi},\n' +
+        '   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},\n' +
+        '   pages = {17336--17345},\n' +
+        '   year = {2026}\n' +
+        '   }';
+} else if (id === 'think3d') {
+    contentParagraph.textContent = '@inproceedings{chen2026think,\n' +
+        '   title = {Think with 3D: Geometric Imagination Grounded Spatial Reasoning from Limited Views},\n' +
+        '   author = {Chen, Zhangquan and Zhang, Manyuan and Yu, Xinlei and Luo, Xufang and Sun, Mingze and Pan, Zihao and An, Xiang and Feng, Yan and Pei, Peng and Cai, Xunliang and Huang, Ruqi},\n' +
+        '   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},\n' +
+        '   year = {2026},\n' +
+        '   url = {https://arxiv.org/abs/2510.18632}\n' +
+        '   }';
+} else if (id === 'lottiegpt') {
+    contentParagraph.textContent = '@inproceedings{chen2026lottiegpt,\n' +
+        '   title = {LottieGPT: Tokenizing Vector Animation for Autoregressive Generation},\n' +
+        '   author = {Chen, Junhao and Gao, Kejun and Cui, Yuehan and Sun, Mingze and Chen, Mingjin and Wang, Shaohui and Long, Xiaoxiao and Ma, Fei and Tian, Qi and Zhao, Hao and Huang, Ruqi},\n' +
+        '   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},\n' +
+        '   pages = {31639--31651},\n' +
+        '   year = {2026}\n' +
+        '   }';
+} else if (id === 'SSM') {
+    contentParagraph.textContent = '@inproceedings{cai2026seeing,\n' +
+        '   title = {Seeing Space and Motion: Enhancing Latent Actions with Geometric and Dynamic Awareness for Vision-Language-Action Models},\n' +
+        '   author = {Cai, Zhejia and Yang, Yandan and Chang, Xinyuan and Liang, Shiyi and Chen, Ronghan and Xiong, Feng and Xu, Mu and Huang, Ruqi},\n' +
+        '   booktitle = {IEEE International Conference on Robotics and Automation},\n' +
+        '   year = {2026}\n' +
+        '   }';
+} else if (id === 'SIFThinker') {
+    contentParagraph.textContent = '@inproceedings{chen2026sifthinker,\n' +
+        '   title = {SIFThinker: Spatially-Aware Image Focus for Visual Reasoning},\n' +
+        '   author = {Chen, Zhangquan and Zhao, Ruihui and Luo, Chuwei and Sun, Mingze and Yu, Xinlei and Kang, Yangyang and Huang, Ruqi},\n' +
+        '   booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},\n' +
+        '   year = {2026},\n' +
+        '   url = {https://arxiv.org/abs/2508.06259}\n' +
+        '   }';
+} else if (id === 'GaussianMesh') {
+    contentParagraph.textContent = '@inproceedings{cai2026improving,\n' +
+        '   title = {Improving Multi-View Reconstruction via Texture-Guided Gaussian-Mesh Joint Optimization},\n' +
+        '   author = {Cai, Zhejia and Jiang, Puhua and Mao, Shiwei and Cao, Hongkun and Huang, Ruqi},\n' +
+        '   booktitle = {International Conference on 3D Vision},\n' +
+        '   year = {2026}\n' +
+        '   }';
+} else if (id === 'DISCOVERSE') {
+    contentParagraph.textContent = '@inproceedings{jia2025discoverse,\n' +
+        '   title = {DISCOVERSE: Efficient Robot Simulation in Complex High-Fidelity Environments},\n' +
+        '   author = {Jia, Yufei and Wang, Guangyu and Dong, Yuhang and Wu, Junzhe and Zeng, Yupei and Lin, Haonan and Wang, Zifan and Ge, Haizhou and Gu, Weibin and Ding, Kairui and Yan, Zike and Cheng, Yunjie and Li, Yue and Wang, Ziming and Li, Chuxuan and Sui, Wei and Shi, Lu and Tian, Guanzhong and Huang, Ruqi and Zhou, Guyue},\n' +
+        '   booktitle = {IEEE/RSJ International Conference on Intelligent Robots and Systems},\n' +
+        '   year = {2025},\n' +
+        '   url = {https://arxiv.org/abs/2507.21981}\n' +
+        '   }';
+} else if (id === 'DRiVE') {
+    contentParagraph.textContent = '@inproceedings{sun2025drive,\n' +
+        '   title = {DRiVE: Diffusion-based Rigging Empowers Generation of Versatile and Expressive Characters},\n' +
+        '   author = {Sun, Mingze and Chen, Junhao and Dong, Junting and Chen, Yurun and Jiang, Xinyu and Mao, Shiwei and Jiang, Puhua and Wang, Jingbo and Dai, Bo and Huang, Ruqi},\n' +
+        '   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},\n' +
+        '   pages = {21170--21180},\n' +
+        '   year = {2025},\n' +
+        '   url = {https://arxiv.org/abs/2411.17423}\n' +
+        '   }';
+} else if (id === 'DV-Matcher') {
+    contentParagraph.textContent = '@inproceedings{chen2025dvmatcher,\n' +
+        '   title = {DV-Matcher: Deformation-based Non-Rigid Point Cloud Matching Guided by Pre-trained Visual Features},\n' +
+        '   author = {Chen, Zhangquan and Jiang, Puhua and Huang, Ruqi},\n' +
+        '   booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},\n' +
+        '   year = {2025},\n' +
+        '   url = {https://arxiv.org/abs/2408.08568}\n' +
+        '   }';
+} else if (id === 'dancetog') {
+    contentParagraph.textContent = '@inproceedings{chen2026dancetogether,\n' +
+        '   title = {Dance Together: Generating Interactive Multi-Person Video without Identity Drifting},\n' +
+        '   author = {Chen, Junhao and Chen, Mingjin and Xu, Jianjin and Li, Xiang and Dong, Junting and Sun, Mingze and Jiang, Puhua and Li, Hongxiang and Yang, Yuhang and Zhao, Hao and Long, Xiaoxiao and Huang, Ruqi},\n' +
+        '   booktitle = {International Conference on Learning Representations},\n' +
+        '   year = {2026},\n' +
+        '   url = {https://dancetog.github.io/}\n' +
+        '   }';
+} else {
     contentParagraph.textContent = 'None';
 }

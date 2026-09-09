@@ -86,3 +86,73 @@ function redirectToPageB(id) {
     // 使用 window.location.href 设置新的 URL，包含 id 参数
     window.location.href = "html/BibTex.html?id=" + id;
 }
+
+(function initPublicationTabs() {
+    var publicationList = document.getElementById('publication-list');
+    if (!publicationList) {
+        return;
+    }
+
+    var allCards = Array.prototype.filter.call(publicationList.children, function (child) {
+        return child.classList.contains('pubdiv');
+    });
+    var selectedIds = [
+        'DeepWonder3D',
+        'NFR',
+        'skeleton',
+        'PIN',
+        'Combo',
+        'DRiVE',
+        'BeyondTalking',
+        'SRIF',
+        'Nanowatt',
+        'DFR',
+        'SSCDFMAP',
+        'NIE',
+        'AMRSAM'
+    ];
+    var cardsById = {};
+
+    allCards.forEach(function (card) {
+        var content = card.querySelector('.pubtxt[id]');
+        if (content) {
+            cardsById[content.id] = card;
+        }
+    });
+
+    var selectedCards = selectedIds.map(function (id) {
+        return cardsById[id];
+    }).filter(Boolean);
+    var tabButtons = document.querySelectorAll('.publication-tab');
+    var fullListNote = document.getElementById('publication-full-note');
+
+    function showPublicationView(view) {
+        var visibleCards = view === 'selected' ? selectedCards : allCards;
+
+        allCards.forEach(function (card) {
+            card.hidden = true;
+        });
+        visibleCards.forEach(function (card) {
+            card.hidden = false;
+            publicationList.appendChild(card);
+        });
+
+        tabButtons.forEach(function (button) {
+            var isActive = button.dataset.publicationView === view;
+            button.classList.toggle('active', isActive);
+            button.setAttribute('aria-selected', String(isActive));
+        });
+
+        if (fullListNote) {
+            fullListNote.hidden = view !== 'publications';
+        }
+    }
+
+    tabButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            showPublicationView(button.dataset.publicationView);
+        });
+    });
+
+    showPublicationView('selected');
+})();
