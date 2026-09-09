@@ -103,6 +103,7 @@ function redirectToPageB(id) {
         'PIN',
         'Combo',
         'DRiVE',
+        'DV-Matcher',
         'BeyondTalking',
         'SRIF',
         'Nanowatt',
@@ -124,8 +125,6 @@ function redirectToPageB(id) {
         return cardsById[id];
     }).filter(Boolean);
     var tabButtons = document.querySelectorAll('.publication-tab');
-    var fullListNote = document.getElementById('publication-full-note');
-
     function showPublicationView(view) {
         var visibleCards = view === 'selected' ? selectedCards : allCards;
 
@@ -142,10 +141,6 @@ function redirectToPageB(id) {
             button.classList.toggle('active', isActive);
             button.setAttribute('aria-selected', String(isActive));
         });
-
-        if (fullListNote) {
-            fullListNote.hidden = view !== 'publications';
-        }
     }
 
     tabButtons.forEach(function (button) {
