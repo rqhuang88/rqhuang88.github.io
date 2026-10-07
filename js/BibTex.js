@@ -341,6 +341,16 @@ if (id === 'DFR') {
         '   doi = {10.1038/s43588-025-00866-x},\n' +
         '   year = {2025},\n' +
         '   }';
+} else if (id === 'INSPIRE') {
+    contentParagraph.textContent = '@article{zhou2026inspire,\n' +
+        '   title = {Photonic neuromorphic learning via generalized in situ physical gradient descent},\n' +
+        '   author = {Zhou, Tiankuang and Zhao, Yun and Li, Shanglong and Shao, Guocheng and Huang, Ruqi and Fang, Lu},\n' +
+        '   journal = {Nature Computational Science},\n' +
+        '   year = {2026},\n' +
+        '   month = oct,\n' +
+        '   doi = {10.1038/s43588-026-01057-y},\n' +
+        '   url = {https://www.nature.com/articles/s43588-026-01057-y}\n' +
+        '   }';
 } else if (id === 'DeepWonder3D') {
     contentParagraph.textContent = '@article{chen2026deepwonder3d,\n' +
         '   title = {Rapid robust high-fidelity 3D neuronal extraction from multiview calcium imaging datasets},\n' +

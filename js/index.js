@@ -97,6 +97,7 @@ function redirectToPageB(id) {
         return child.classList.contains('pubdiv');
     });
     var selectedIds = [
+        'INSPIRE',
         'DeepWonder3D',
         'NFR',
         'skeleton',
